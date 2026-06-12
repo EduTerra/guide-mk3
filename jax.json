@@ -1,0 +1,156 @@
+{
+  "theme": {
+    "primary": "#8E27F5",
+    "secondary": "#170519",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Jax",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Jax.png",
+
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "A",
+  "strengths": [
+    "Rushdown com Kara Jabs, Audio Midi Ccombo e Staggers.",
+    "Também é bom e Zoning com Misseis e Gound Pound.",
+    "Rasteira é safe em block",
+    "Agarrão tem dano a mais fazendo o Multi Slam.",
+    "Além disso também tem agarrão no ar"
+  ],
+  "weaknesses": [
+    "Hurtbox grande"
+  ],
+  "specialMoves": [
+    {
+      "name": "Dash Punch",
+      "shortDesc": "Avança rapidamente para frente desferindo um soco poderoso.",
+      "inputs": "F, F, HK",
+      "image": "",
+      "supportText": "Alguns jogadores usam para atacar de surpresa, em wakeups por exemplo. Facilmente punível se o oponete agachar. Possível usar em juggles de canto. Possível usar como Anti-Air dependendo da distância."
+    },
+        {
+      "name": "Gotcha Grab",
+      "shortDesc": "Agarre o inimigo e desfira socos.",
+      "inputs": "F, F, LP, LP, LP,LP",
+      "image": "",
+      "supportText": "Muito rápido e safe contra jogadores humanos, única forma realmente forte de contra-atacar é com uma rasteira. Pode ser usado pra punir combos e extender combos no canto"
+    },
+    {
+      "name": "Missile - Single Shot",
+      "shortDesc": "Solta um míssil.",
+      "inputs": "B, F, HP",
+      "image": "",
+      "supportText": "Ótimo para zoning, pois é rápido e joga o Jax para trás, fazendo com que alguns personagens que pulem sobre o míssil não alcancem o Jax."
+
+    },
+    {
+      "name": "Missile - Double Shot",
+      "shortDesc": "Solta 2 mísseis.",
+      "inputs": "F, F, B, B, HP",
+      "image": "",
+      "supportText": "Ótimo para mind games, pois o adversário tem que adivinhar se o Jax vai soltar um ou dois mísseis."
+    },
+    {
+      "name": "Ground Smash",
+      "shortDesc": "Dá um soco no chão causando um terremoto.",
+      "inputs": "Hold + LK, 3s",
+      "image": "",
+      "supportText": "Animação demorada, porém é um golpe inbloqueável, fazendo com que o inimigo pule para se defender. Bom para mind games."
+    },
+    {
+      "name": "Backbreaker",
+      "shortDesc": "Agarre o inimigo no ar.",
+      "inputs": "BLK, (no ar)",
+      "image": "",
+      "supportText" :"Um dos golpes mais importantes do personagem, quase zero frames de prioridade e um dando consideravelmente alto. Geralmente acompanhado de um JK, pode elevar o dano até 30%. Uma dica é toda vez que for pular pressione algumas vezes o bloqueio para caso encoste com o pulo de um inimigo irá agarrá-lo sempre."
+    },
+    {
+      "name": "Quadruple Slam",
+      "shortDesc": "Ao agarrar o inimigo é possível extender o dano.",
+      "inputs": "Agarrão + HP, HP, HP, HP",
+      "image": "",
+      "supportText" :"Extende o dano dos agarrões. 6% por cada agarrão a mais."
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "33%",
+      "inputs": "HK, HK, D + HP, HP, BLK, LP, B + HP"
+    },
+        {
+      "name": "Combo",
+      "damage": "27%",
+      "inputs": "HP, HP, BLK, LP, B + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "Perto",
+      "inputs": "U, U, D, F, U",
+      "supportText": "Segure Bloqueio para facilitar"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "Meia Tela",
+      "inputs": "RUN, BLK, RUN, RUN, LK"
+    },
+    {
+      "name": "Animality",
+      "desc": "Perto",
+      "inputs": "Segure + LP, F, F, D, F, Solte"
+    },
+    {
+      "name": "Babality",
+      "desc": "Meia Tela",
+      "inputs": "D, D, D, LK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Meia Tela",
+      "inputs": "LK, RUN, RUN, LK"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "D, F, D, LP"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Um personagem com um monte de opções, pode ser zoner, pode ser rush down, pode ser conter. Só sofre um pouco contra personagens com teleporte. Abuse dos HK e das rasteiras que não são puníveis em BLK. CUIDADO com o combo de 7 hits pois costuma Whiffar contra alguns personagens."
+    },
+    {
+      "title": "Links Fáceis",
+      "text": "1. JK, Backbreaker <br>ou<BR> 2. Backbreaker, JK."
+    },
+       {
+      "title": "Estratégia contra CPU do Pulo + Ground Smash",
+      "text": "Quando você pula pra trás é comum a CPU querer soltar uma magia/projétil, por isso existe uma estratégia que consiste em pular pra trás com LK, mantenha segurando o botão do chute, agache, e se caso a CPU soltar uma magia solte o LK logo depois dela passar sobre sua cabeça."
+    },
+    {
+      "title": "Option-Select de Rasteira e Agarrão",
+      "text": "Existe um option-select onde logo após a rasteira voce fica apertando, U + BLK, se a rasteira pegar maravilha, se o inimigo pular você agarra ele no ar e se defender a rasteira do Jax é quase sempre segura."
+    },
+    {
+      "title": "Juggles Anti Aéreos",
+      "text": "1. ANTI-AIR + HP, Gotcha Grab - 27% <BR> 2. ANTI-AIR + HP, HP, JK, Backbreaker - 28% "
+    },
+    {
+      "title": "Juggle de Canto",
+      "text": "OBS GERAL: mesmo se oponente ainda não estiver no canto, ao fazer um combo ou JK que joga o oponente para trás, se ele acabar encostando no canto é possível usar o Dash Punch. <BR><BR> 1. HK, D + HP, HP, BLK, LP, B + HP, Uppercut - 54% <BR><BR> 2. JK, ANTI-AIR + HP, Dash Punch, HK - 68%"
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "theme": {
+    "primary": "#54A8D1",
+    "secondary": "#BCD9E8",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Stryker",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Stryker.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "D",
+  "strengths": [
+    "Vários infinitos na maioria dos personagens.",
+    "Possui o HP com mais distância.",
+    "ApBons anti-aéreos. Inclusive pode usar o Batton Throw para punir Crossups."
+  ],
+  "weaknesses": [
+    "Seu LP é praticamente inútil.",
+    "Hurtbox muito grande."
+  ],
+  "specialMoves": [
+    {
+      "name": "High Grenade",
+      "shortDesc": "Arremeça granada alta",
+      "inputs": "D, B, HP",
+      "image": "",
+      "supportText": "Essencial para controlar o espaço. Cuidado para não arremeçar a granada e não acertar nada, pois o oponente pode aproveitar a recuperação para contra-atacar."
+    },
+    {
+      "name": "Low Grenade",
+      "shortDesc": "Arremeça granada baixa",
+      "inputs": "D, B, LP",
+      "image": "",
+      "supportText": "Essencial para controlar o espaço. Cuidado para não arremeçar a granada e não acertar nada, pois o oponente pode aproveitar a recuperação para contra-atacar."
+    },
+    {
+      "name": "Baton Throw",
+      "shortDesc": "Avança segurando o cacetete.",
+      "inputs": "F, F, HK",
+      "image": "",
+      "supportText": "Bom para punir crossups antecipados e para adicionar dano em juggles."
+    },
+    {
+      "name": "Baton Trip",
+      "shortDesc": "Rasteira com Cacetete",
+      "inputs": "F, B, LP",
+      "image": "",
+      "supportText": "Rasteira feita com cacetete. Praticamente inútil, mas pode ser usada para surpreender o oponente."
+    }
+  ],
+  "combos": [
+        {
+      "name": "Combo",
+      "damage": "23%",
+      "inputs": "HK, LK, B + LP, B + HK"
+    },
+    {
+      "name": "Combo - Launcher",
+      "damage": "23%",
+      "inputs": "LK, HP, HP, LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "LK, LK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, LP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "Perto",
+      "inputs": "D, F, D, F, BLK"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "Além da metade da tela",
+      "inputs": "F, F, F, LK"
+    },
+    {
+      "name": "Animality",
+      "desc": "Rasteira",
+      "inputs": "RUN, RUN, RUN, BLK"
+    },
+    {
+      "name": "Babality",
+      "desc": "Além da Rasteira",
+      "inputs": "D, F, F, B, HP"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Além da Rasteira",
+      "inputs": "LP, RUN, RUN, LP"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "Segure + BLK, F, U, U, HK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "´É um personagem de Mid Tier pra baixo, majoritariamente um Zoner, porém com golpes especiais diferentes. No MK3 Vanilla, o Stryker ainda não tinha recebido o buff na pistola que ganhou no Ultimate. O seu arremesso de bastão é lento e previsível, fazendo dele um personagem com poucos recursos."
+    },
+    {
+      "title": "Juggle Anti Aéreo",
+      "text": "ANTI-AIR, HP HP, Baton Throw - 32%."
+    }, 
+    {
+      "title": "Juggle com Launcher",
+      "text": "LK, HP, HP, LP, Jump Kick, Baton Dash - ?%."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

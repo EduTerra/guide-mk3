@@ -1,0 +1,130 @@
+{
+  "theme": {
+    "primary": "#BD0000",
+    "secondary": "#170505",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Kano",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Kano.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "B",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "Knife Throw",
+      "shortDesc": "D, B, HP",
+      "inputs": "D, B, HP",
+      "image": ""
+    },
+    {
+      "name": "Knife Uppercut",
+      "shortDesc": "D, F, HP",
+      "inputs": "D, F, HP",
+      "image": ""
+    },
+    {
+      "name": "Roll",
+      "shortDesc": "Hold LK for 3 seconds, then release",
+      "inputs": "Hold LK for 3 seconds, then release",
+      "image": "",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Strangle Grab",
+      "shortDesc": "D, F, LP",
+      "inputs": "D, F, LP",
+      "image": ""
+    },
+    {
+      "name": "Air Throw",
+      "shortDesc": "in air",
+      "inputs": "BLK",
+      "image": ""
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, D + LP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, B + LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "26%",
+      "inputs": "HP, HP, HK, LK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "15%",
+      "inputs": "LK, LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "LK, D + LP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "23%",
+      "inputs": "HK, HK, LK, B + HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "close",
+      "inputs": "Hold LP, F, D, D, F, release LP",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "sweep",
+      "inputs": "LP, BLK, BLK, HK"
+    },
+    {
+      "name": "Animality",
+      "desc": "close",
+      "inputs": "Hold HP, BLK, BLK, BLK, release HP",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "F, F, D, D, LK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "outside sweep",
+      "inputs": "LK, RUN, RUN, HK"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "Up, Up, B, LK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Se tornou uma potência no MK3. O seu agarrão de comando (Choke) ignora a defesa se o oponente estiver colado. A faca rápida e o Cannonball dão a ele um controle de espaço absurdo."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "theme": {
+    "primary": "#CCBD9F",
+    "secondary": "#8C19E6",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Sindel",
+    "quote": "Altos riscos, mas altas recompensas.",
+    "image": "Imagens/MK3/Historia-Sindel.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "C",
+  "strengths": [
+    "Jabs HP são excelentes, alta prioridade e alcance. Também tem um hitbox um pouco baixo, podendo pegar em vários personagens agachados.",
+    "Pune LK, HK e Rasteiras com o grito.",
+    "Combos que causam muito dano."
+  ],
+  "weaknesses": [
+    "LP muito fraco.",
+    "Possui um infinito, mas muito dificil de fazer."
+  ],
+  "specialMoves": [
+    {
+      "name": "Scream",
+      "shortDesc": "Solta ondas de grito.",
+      "inputs": "F, F, F, HP",
+      "image": "",
+      "supportText": "Comando mais importante. Pode ser punível na defesa ou na leitura de personagens com teleporte, porém pode ser usado como Anti-Aéreo ou até mesmo depois de algum outro anti-aéreo (como HP), seu Stunt ao acertar deixa inimigo aberto pra combo."
+    },
+    {
+      "name": "Firebreath",
+      "shortDesc": "Solta um bafo mágico pra frente",
+      "inputs": "F, F, LP",
+      "image": "",
+      "supportText": "Muito lento ao executar normalmente, porém ele sai muito rápido logo após um grounded Jump Kick."
+    },
+    {
+      "name": "Air Firebreath",
+      "shortDesc": "Solta um bafo mágico no ar, em diagonal pra baixo.",
+      "inputs": "D, F, LK",
+      "image": "",
+      "supportText": "Esse sim é bem útil para usar em zoning e para extender dano em JKs, mas também perigoso ao ficar esmapando próximo dos inimigos. Cuidado ao fazer de longe, pois o corpo da Sindel fica exposto a qualquer magia/projétil alto ou médio. Útil em mind games ao fazer um JK no inimigo e ele defender, pois se vocÊ cancelar com essa magia e ele tentar te punir vai tomar dano."
+    },
+        {
+      "name": "Float",
+      "shortDesc": "Sindel fica em um estância de vôo.",
+      "inputs": "B, B, F, HK",
+      "image": "",
+      "supportText": "Golpe mais único do jogo e também um dos mais inúteis. A animação do vôo demora demais e a Sindel fica muito vulnerável. Muitas pessoas usam como um Taunt, apertando bloqueio imediatamente depois do comando do golpe, pois o som do vôo vai sair e a Sindel vai dar uma dançadinha. Também é possível usar pra linkar combos nos cantos. É um pouco mais útil nas versões de console, onde os personagens são menores e ela fica mais pro alto."
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "33%",
+      "inputs": "HK, HP, HP, LP, HK"
+    },
+    {
+      "name": "Combo - Launcher",
+      "damage": "27%",
+      "inputs": "HK, HP, HP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "25%",
+      "inputs": "HP, HP, LP, HK"
+    },
+    {
+      "name": "Combo - Launcher",
+      "damage": "19%",
+      "inputs": "HP, HP, D + HP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "Rasteira",
+      "inputs": "RUN, RUN, BLK, RUN, BLK"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "Perto",
+      "inputs": "RUN, BLK, BLK, RUN + BLK"
+    },
+    {
+      "name": "Animality",
+      "desc": "Perto",
+      "inputs": "F, F, U, HP"
+    },
+    {
+      "name": "Babality",
+      "desc": "Meia Tela",
+      "inputs": "RUN, RUN, RUN, U"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Meia Tela",
+      "inputs": "RUN, RUN, RUN, RUN, RUN, U"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "D, D, D, D, LP"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Tier list médio, porém com combos que dão muito dano. O que falta em golpes normais ganha nos golpes especiais. Abuse do Scream, crie iscas pulando pra trás e cancelando no Air Firebreath (contra personagens sem teleporte). Combo mais importante nos rushdowns é HK, HP, HP, D + HP."
+    },
+    {
+      "title": "Bait do Pulo",
+      "text": "Contra CPU é possível criar um bait onde se pula reto e chuta, o inimigo vai querer pular em sua direção, aí você pode punir com um ANTI-AIR + Scream e emendar um combo."
+    },
+    {
+      "title": "Jump Kick com Firebreath",
+      "text": "Firebreath é uma magia muito lenta, porém se fizer logo após um grounded JK que acertou ele sai muito mais rápida."
+    },
+    {
+      "title": "Loop do Grito",
+      "text": "Existe um loop, porém não infinito utilizando o grito:<BR>ANTI-AIR Scream, RUN, HP, Scream, RUN, HP,...<BR> Quando o inimigo estiver quase próximo ao chão deixe ele se aproximar e finalize com um combo."
+    },
+    {
+      "title": "Juggles básicos",
+      "text": "Scream, HK, HP, HP, D + HP, JK, Air Firebreath - 40% <BR> ANTI-AIR + HP, HP, Scream, HK, HP, HP, D + HP, JK, Air Firebreath - 54%"
+    },
+    {
+      "title": "Juggles avançados",
+      "text": "ANTI=AIR + HP, HP, Scream, HP, HP, Scream, HP, HP, JK, Air Firebreath - 67%"
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

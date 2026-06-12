@@ -1,0 +1,125 @@
+{
+  "theme": {
+    "primary": "#A49CB5",
+    "secondary": "#3B393D",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Smoke",
+    "quote": "0110 100 00111 00010 11001 1010.",
+    "image": "Imagens/MK3/Historia-Smoke.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "C",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "Harpoon",
+      "shortDesc": "B, B, LP",
+      "inputs": "B, B, LP",
+      "image": ""
+    },
+    {
+      "name": "Teleport Uppercut",
+      "shortDesc": "can be done in air too",
+      "inputs": "F, F, LK",
+      "image": ""
+    },
+    {
+      "name": "Air Throw",
+      "shortDesc": "in air",
+      "inputs": "BLK",
+      "image": ""
+    },
+    {
+      "name": "Invisibility",
+      "shortDesc": "Hold BL, Up, Up, R",
+      "inputs": "Hold BLK, Up, Up, RUN",
+      "image": "",
+      "supportText": "Hold"
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "26%",
+      "inputs": "HP, HP, LK, HK, LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, LP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "full screen",
+      "inputs": "Hold BLK, Up, Up, F, D",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "",
+      "inputs": "Hold RUN + BLK, D, D, F, Up (sweep)",
+      "supportText": "Hold"
+    },
+    {
+      "name": ", PC (MAT",
+      "desc": "",
+      "inputs": "DE)"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "",
+      "inputs": "Hold BLK, D, D, F, Up (sweep)",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Animality",
+      "desc": "full screen",
+      "inputs": "D, F, F, BLK"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "D, D, B, B, HK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "full screen",
+      "inputs": "RUN, RUN, RUN, HK"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "F, F, D, LK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "O personagem secreto do jogo, tem um estilo parecido com o Scorpion (que ficou de fora dessa versão) com arpão que puxa pra perto e teleporte, porém esse teleporte é bem punível."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

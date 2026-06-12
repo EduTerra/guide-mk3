@@ -1,0 +1,124 @@
+{
+  "theme": {
+    "primary": "#436634",
+    "secondary": "#B59E57",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Sonya",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Sonya.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "B",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "Energy Rings",
+      "shortDesc": "D, F, LP",
+      "inputs": "D, F, LP",
+      "image": ""
+    },
+    {
+      "name": "Flying Punch",
+      "shortDesc": "F, B, HP",
+      "inputs": "F, B, HP",
+      "image": ""
+    },
+    {
+      "name": "Leg Grab",
+      "shortDesc": "D + LP + BL",
+      "inputs": "D + LP + BLK",
+      "image": ""
+    },
+    {
+      "name": "Bicycle Kick",
+      "shortDesc": "B, B, D, HK",
+      "inputs": "B, B, D, HK",
+      "image": ""
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, LP, B + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "27%",
+      "inputs": "HK, HP, HP, LP, B + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "31%",
+      "inputs": "HK, HK, HP, HP, LP, B + HP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "",
+      "inputs": "Hold BLK + RUN, Up, Up, B, D (half screen)",
+      "supportText": "Hold"
+    },
+    {
+      "name": ", PC (MAT",
+      "desc": "",
+      "inputs": "DE)"
+    },
+    {
+      "name": "Fatality 1",
+      "desc": "",
+      "inputs": "Hold BLK, Up, Up, B, D (half screen)",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "half screen",
+      "inputs": "B, F, D, D, RUN"
+    },
+    {
+      "name": "Animality",
+      "desc": "close",
+      "inputs": "Hold LP, B, F, D, F, release LP",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "D, D, F, LK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "",
+      "inputs": "B, F, B, D + RUN"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "F, F, D, HP"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Velocidade pura. O Leg Grab (agarrão com as pernas) dela é um dos golpes mais rápidos do jogo e pune qualquer golpe mal colocado no mapa. Os seus combos tiram muita energia."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

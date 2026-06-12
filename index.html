@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Mortal Kombat 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="logo-banner" id="logo-banner-container">
+        <div id="logo-image-holder"></div>
+        <div class="header-bar">
+            <h1>GUIA</h1>
+            <div>
+                <label id="lbl-ctrl" for="controller-select" style="margin-right: 5px; font-weight: bold; color: var(--primary); font-size: 11px;">CONTROLE:</label>
+                <select id="controller-select">
+                    <option value="arcade">Arcade (Original)</option>
+                    <option value="snes">Super Nintendo</option>
+                    <option value="genesis">Mega Drive</option>
+                    <option value="ps1">PlayStation 1</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="mk-guide" id="guide-container"></div>
+
+<script>
+    const layouts = {
+        arcade: { LP: 'LP', HP: 'HP', LK: 'LK', HK: 'HK', BLK: 'BLK', RUN: 'RUN' },
+        snes: { LP: 'Y', HP: 'X', LK: 'B', HK: 'A', BLK: 'L', RUN: 'R' },
+        genesis: { LP: 'A', HP: 'X', LK: 'C', HK: 'Z', BLK: 'B', RUN: 'Y' },
+        ps1: { LP: '▢', HP: '△', LK: '✕', HK: '◯', BLK: 'R1', RUN: 'R2' }
+    };
+
+    const arrowMap = { 
+        '⬇': { icon: '▼', cls: 'dir-D' }, 
+        '⬆': { icon: '▲', cls: 'dir-U' }, 
+        '⬅': { icon: '◀', cls: 'dir-L' }, 
+        '➡': { icon: '▶', cls: 'dir-R' },
+        'D':  { icon: '▼', cls: 'dir-D' },
+        'DOWN': { icon: '▼', cls: 'dir-D' },
+        'U':  { icon: '▲', cls: 'dir-U' },
+        'UP': { icon: '▲', cls: 'dir-U' },
+        'B':  { icon: '◀', cls: 'dir-L' },
+        'BACK': { icon: '◀', cls: 'dir-L' },
+        'F':  { icon: '▶', cls: 'dir-R' },
+        'FORWARD': { icon: '▶', cls: 'dir-R' },
+        'DB': { icon: '↙', cls: 'dir-DL' },
+        'DF': { icon: '↘', cls: 'dir-DR' },
+        'UB': { icon: '↖', cls: 'dir-UL' },
+        'UF': { icon: '↗', cls: 'dir-UR' }
+    };
+
+    let currentLayout = 'arcade';
+    let charData = null;
+
+    function getButtonHtml(input) {
+        if (!input) return '';
+        let cleanInput = input.trim();
+        let normalized = cleanInput.toUpperCase();
+        if(normalized === 'ANTI-AIR') return `<span class="k-btn k-anti-air">ANTI-AIR</span>`;
+        if (cleanInput.includes(',')) {
+            const parts = cleanInput.split(',').map(part => part.trim()).filter(Boolean);
+            return parts.map((part, idx) => {
+                return getButtonHtml(part) + (idx < parts.length - 1 ? '<span class="separator">,</span>' : '');
+            }).join('');
+        }
+        if (cleanInput.includes('+')) {
+            const parts = cleanInput.split(/\s*\+\s*/).map(part => part.trim()).filter(Boolean);
+            return parts.map((part, idx) => {
+                return getButtonHtml(part) + (idx < parts.length - 1 ? '<span class="separator">+</span>' : '');
+            }).join('');
+        }
+        if (arrowMap[normalized]) {
+            return `<span class="k-btn k-dir ${arrowMap[normalized].cls}"><span class="dir-icon">${arrowMap[normalized].icon}</span></span>`;
+        }
+        let rawButton = cleanInput.replace(/\b(Hold|Segure|Release|Solte)\b/i, '').trim();
+        let mapped = layouts[currentLayout][rawButton] || cleanInput;
+        const attackKeys = ['LP','HP','LK','HK'];
+        const mappedValue = layouts[currentLayout][rawButton] || rawButton;
+        if (attackKeys.includes(mappedValue.toUpperCase())) {
+            return `<span class="k-btn k-atk">${mapped}</span>`;
+        }
+        if (normalized === '+') return `<span class="separator">+</span>`;
+        return `<span class="k-btn k-util">${mapped}</span>`;
+    }
+
+    function parseStrategyText(text) {
+        let replaced = text.replace(/ANTI-AIR/g, '<span class="k-btn k-anti-air">ANTI-AIR</span>');
+        ['HP', 'LP', 'HK', 'LK'].forEach(word => {
+            let actualBtn = layouts[currentLayout][word] || word;
+            let regex = new RegExp(`\\b${word}\\b`, 'g');
+            replaced = replaced.replace(regex, `<span class="k-btn k-atk" style="height:16px; width:16px; font-size:8px; display:inline-flex; box-shadow:none;">${actualBtn}</span>`);
+        });
+        return replaced;
+    }
+
+    let rosterData = [];
+
+    function loadCharacterData(jsonFile) {
+        fetch(jsonFile)
+            .then(res => res.json())
+            .then(data => {
+                charData = data;
+                if (rosterData.length) renderGuide();
+            })
+            .catch(err => console.error("Erro ao carregar dados do personagem:", err));
+    }
+
+    function loadRoster() {
+        fetch('roster.json')
+            .then(res => res.json())
+            .then(data => {
+                rosterData = data.roster || [];
+                if (charData) renderGuide();
+            })
+            .catch(err => console.error("Erro ao carregar o roster:", err));
+    }
+
+    function renderGuide() {
+        if (!charData || !rosterData.length) return;
+
+        document.documentElement.style.setProperty('--primary', charData.theme.primary);
+        document.documentElement.style.setProperty('--secondary', charData.theme.secondary);
+        document.documentElement.style.setProperty('--tertiary', charData.theme.tertiary);
+        const panelBg = charData.theme.bgAccent || getComputedStyle(document.documentElement).getPropertyValue('--panel-bg').trim();
+        document.documentElement.style.setProperty('--panel-bg', panelBg);
+        const currentCharacterName = (charData.character.name || '').toUpperCase();
+
+        const formatInputs = (inputValue) => {
+            if (!inputValue) return '';
+            if (Array.isArray(inputValue)) {
+                inputValue = inputValue.join(', ');
+            }
+            return getButtonHtml(inputValue);
+        };
+
+        const defaultGameLogo = 'Imagens/MK3/Capa-MK3.png';
+        const logoImageHtml = `<img id="logo-banner-image" class="logo-banner-image" src="${defaultGameLogo}" alt="Mortal Kombat 3">`;
+        const logoHolder = document.getElementById('logo-image-holder');
+        if (logoHolder) logoHolder.innerHTML = logoImageHtml;
+
+        let html = `
+            <div class="col-left">
+                <div class="story-banner" style="background-image: url('${charData.character.image}');">
+                    <div class="story-banner-content">
+                        <div class="profile-name">${charData.character.name}</div>
+                        <div class="panel-title story-quote">"${charData.character.quote || 'This fight will be your last!'}"</div>
+                        <p class="desc-text story-text">${charData.character.history}</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="panel-title" style="--theme-color: var(--green-solid); color: #000;">VANTAGENS</div>
+                    <ul class="sw-list strengths-list">
+                        ${charData.strengths.map(s => `<li class="desc-text">${s}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="panel-title" style="--theme-color: var(--red-solid); color: #fff;">FRAQUEZAS</div>
+                    <ul class="sw-list weaknesses-list">
+                        ${charData.weaknesses.map(w => `<li class="desc-text">${w}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="tier-block">
+                    <span class="panel-title" style="--theme-color: #444;">TIER LIST</span>
+                    <div class="tier-grade">${charData.tier}</div>
+                </div>
+            </div>
+
+            <div class="col-mid">
+                <div class="panel-wrapper gradient-primary-secondary" style="--theme-color: var(--primary);">
+                    <div class="panel">
+                        <div class="panel-title">GOLPES ESPECIAIS</div>
+                        <div class="special-moves-container ${charData.specialMoves.length > 3 ? 'two-columns' : ''}">
+                            ${charData.specialMoves.map(move => `
+                                <div class="list-row move-item" style="flex-direction: row; align-items: flex-start;">
+                                    ${move.image ? `<img src="${move.image}" class="move-img-real" alt="${move.name}">` : ''}
+                                    <div style="display: flex; flex-direction: column; flex: 1; gap: 2px;">
+                                        <div style="display: flex; align-items: baseline; gap: 4px;">
+                                            <span class="list-name">${move.name}</span>
+                                            <span class="desc-text" style="font-size:10px;">- ${move.shortDesc}</span>
+                                        </div>
+                                        <div class="inputs-container">${formatInputs(move.inputs)}</div>
+                                        ${move.supportText ? `<span class="support-text">${move.supportText}</span>` : ''}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-wrapper stretch gradient-primary-secondary" style="--theme-color: var(--primary);">
+                    <div class="panel">
+                        <div class="panel-title">ESTRATÉGIAS</div>
+                        ${charData.strategies.map(strat => `
+                            <div class="strategy-item desc-text">
+                                <span class="strategy-title">${strat.title}</span>
+                                ${parseStrategyText(strat.text)}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="panel-wrapper gradient-secondary-red" style="--theme-color: var(--secondary);">
+                    <div class="panel">
+                        <div class="panel-title">COMBOS</div>
+                        ${charData.combos.map(combo => `
+                            <div class="list-row">
+                                <div style="display: flex; align-items: baseline; gap: 4px;">
+                                    <span class="list-name">${combo.name}</span>
+                                    <span class="desc-text">(${combo.damage})</span>
+                                </div>
+                                <div class="inputs-container">${formatInputs(combo.inputs)}</div>
+                                ${combo.supportText ? `<span class="support-text">${combo.supportText}</span>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="panel-wrapper stretch gradient-red-orange" style="--theme-color: var(--tertiary);">
+                    <div class="panel">
+                        <div class="panel-title">FINALIZADORES</div>
+                        ${charData.finishers.map(fin => `
+                            <div class="list-row">
+                                <div style="display: flex; align-items: baseline; gap: 4px;">
+                                    <span class="list-name">${fin.name}</span>
+                                    <span class="desc-text">(${fin.desc})</span>
+                                </div>
+                                <div class="inputs-container">${formatInputs(fin.inputs)}</div>
+                                ${fin.supportText ? `<span class="support-text">${fin.supportText}</span>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-bottom panel-wrapper solid-yellow" style="--theme-color: #ffd700;">
+                <div class="panel">
+                    <div class="panel-title" style="color: #000; text-shadow: none;">CURIOSIDADES</div>
+                    <ul class="curiosity-list">
+                        ${charData.curiosities.map(c => `<li class="desc-text">${c}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="select-fighter-section">
+                <div class="select-fighter-title">TODOS OS PERSONAGENS</div>
+                <div class="roster-grid">
+                    ${rosterData.map(r => `
+                        <div class="roster-item ${r.name.toUpperCase() === currentCharacterName ? 'active' : ''}" onclick="loadCharacterData('${r.file}')">
+                            <img src="${r.image}" class="roster-img" alt="${r.name}">
+                            <span class="roster-name">${r.name}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <div class="footer">
+                <span class="legend-title">LEGENDA DO MAPEAMENTO ATUAL:</span>
+                <div class="legend-grid">
+                    <div class="legend-item"><span class="k-btn k-dir dir-R"><span class="dir-icon">▶</span></span> Direção</div>
+                    <div class="legend-item"><span class="k-btn k-atk">${layouts[currentLayout].HP}</span> Soco Forte</div>
+                    <div class="legend-item"><span class="k-btn k-atk">${layouts[currentLayout].LP}</span> Soco Fraco</div>
+                    <div class="legend-item"><span class="k-btn k-atk">${layouts[currentLayout].HK}</span> Chute Forte</div>
+                    <div class="legend-item"><span class="k-btn k-atk">${layouts[currentLayout].LK}</span> Chute Fraco</div>
+                    <div class="legend-item"><span class="k-btn k-util">${layouts[currentLayout].BLK}</span> Defesa</div>
+                    <div class="legend-item"><span class="k-btn k-util">${layouts[currentLayout].RUN}</span> Correr</div>
+                    <div class="legend-item"><span class="k-btn k-anti-air">ANTI-AIR</span> Corta-Aéreo</div>
+                    <div class="legend-item">${getButtonHtml('⬇')} ${getButtonHtml('+')} ${getButtonHtml('HP')} Gancho</div>
+                    <div class="legend-item">${getButtonHtml('⬅')} ${getButtonHtml('+')} ${getButtonHtml('HK')} Roundhouse</div>
+                    <div class="legend-item">${getButtonHtml('⬅')} ${getButtonHtml('+')} ${getButtonHtml('LK')} Rasteira</div>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('guide-container').innerHTML = html;
+    }
+
+    document.getElementById('controller-select').addEventListener('change', (e) => {
+        currentLayout = e.target.value;
+        renderGuide();
+    });
+
+    // Inicialização da Engine carregando os arquivos JSON externos
+    loadRoster();
+    loadCharacterData('cyrax.json');
+</script>
+</body>
+</html>

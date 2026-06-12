@@ -1,0 +1,147 @@
+{
+  "theme": {
+    "primary": "#FCB900",
+    "secondary": "#FF5400",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Cyrax",
+    "quote": "001 100011 1011 010 000111 011",
+    "image": "Imagens/MK3/Historia-Cyrax.png",
+    "history": "Robozão maneiro que acha que é pescador e solta uma redes nos inimigos."
+  },
+  "tier": "D",
+  "strengths": [
+    "Único que pune Jump Kicks no Bloco com o Air Throw",
+    "O agarrão dele é um launcher, pode optar por combar ou fazer um vortez de thwow.",
+    "Diferente do Ultimate, aqui ele pode soltar bomba enquanto a rede ainda estiver na tela."
+  ],
+  "weaknesses": [
+    "Socos muito ruins.",
+    "Combos médios de baixo dano.",
+    "Não pune com LK, HK, Rasteira no bloqueio."
+  ],
+  "specialMoves": [
+    {
+      "name": "Bomb - Far",
+      "shortDesc": "Granada para Longe.",
+      "inputs": "Segure + LK, F, F, HK",
+      "image": "",
+      "supportText": "Limite de 2 por vez. Ótimo para Setups, sendo launcher pra continuar ataque."
+    },
+    {
+      "name": "Bomb - Near",
+      "shortDesc": "Granada para distância média.",
+      "inputs": "Segure + LK, B, B, HK",
+      "image": "",
+      "supportText": "Limite de 2 por vez. Ótimo para Setups, sendo launcher pra continuar ataque."
+    },
+    {
+      "name": "Teleport",
+      "shortDesc": "Se Teleporta para o lado oposto.",
+      "inputs": "F, D, BLK, Pode ser feito no ar",
+      "image": "",
+      "supportText": "Cyrax fica muito vulnerável, use esporadicamente pra fugir de pressão. Pode ser usado para tentar counterar projétils, assim como Kung Lao faz, porém menos efetivo."
+    },
+    {
+      "name": "Energy Net",
+      "shortDesc": "Prende o oponente e o puxa para perto.",
+      "inputs": "B, B, LK",
+      "image": "",
+      "supportText": "Pode ser usado como trade em outros projéteis ou até mesmo em jump kicks. Principal ferramenta para Juggles, e pode ser utilizada junto com as bombas."
+    },
+    {
+      "name": "Air Throw",
+      "shortDesc": "Arremeço feito no ar.",
+      "inputs": "D, F, BLK,Espere, LP",
+      "image": "",
+      "supportText": "Um agarrão de comando com mecânica diferente, a primeira parte do comando é para se lançar ao ar, e a segunda parte (apertando LK) é para agarrar. Possível usar pra extender juggles,"
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "30%",
+      "inputs": "HP, HP, HK, HP, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    },
+        {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, LP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1 - Heli",
+      "desc": "Qualquer lugar",
+      "inputs": "Segure + BLK, D, D, Up, D, Solte, HP"
+    },
+    {
+      "name": "Fatality 2 - Self Destruct",
+      "desc": "Perto",
+      "inputs": "D, D, F, U, RUN"
+    },
+    {
+      "name": "Animality",
+      "desc": "Perto",
+      "inputs": "Segure + BKL, U, U, D, D"
+    },
+    {
+      "name": "Babality",
+      "desc": "Qualquer lugar",
+      "inputs": "F, F, B, HP"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Metade da Tela",
+      "inputs": "RUN, RUN, RUN, Up"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "RUN, BLK, RUN"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "A rede verde é um recurso espetacular, mas o resto do seu arsenal exige uma leitura de jogo perfeita. Se o oponente jogar na correria agressiva, o Cyrax não tem tempo de armar as suas armadilhas, por isso é um personagem de Tier baixo, o pior dos 3 robôs, é necessário esforço para causar danos altos. <BR><BR> A estratégia principal é usar as bombas e redes para controlar os espaços e fazer mind games. É um personagem que pode dar muito dando, mas é necessário estudar bastante. Tente jogar o inimigo pra longe com um Roundhouse para fazer setup com as bombas (contra personagens que nao teleportam). <BR> <BR> Se quiser jogar seguro e simples, ao acertar a rede: <BR><BR> Se atingir o inimigo no ar use Roundhouse Kick (B + HK) <BR><BR> Se pegar no chão corra até o inimigo e faça um combo (HP, HP, HK, HP, HK, B + HK). <BR> <BR> É possível pegar com a rede depois de explosões de bomba. E se quiser arriscar algo mais complexo tente soltar uma bomba abaixo do inimigo depois de acertar a rede."
+    },
+    {
+      "title": "Links Fáceis",
+      "text": "?"
+    },
+    {
+      "title": "Links Difíceis",
+      "text": "?"
+    },
+    {
+      "title": "Juggles",
+      "text": "Existe uma variedade enorme de acordo com as variações de bombas e posicionamentos. "
+    },
+    {
+      "title": "Juggle Anti-Aéreo GARANTIDO",
+      "text": "ANTI-AIR, Rede, Roundhouse - (uns 25%?)"
+    },
+    {
+      "title": "Juggle Básico Anti-Aéreo",
+      "text": "ANTI-AIR, Rede, ANTI-AIR + HP HP, Rede, ANTI-AIR + HP HP, Air Throw - (41%)"
+    },
+    {
+      "title": "Juggle Básico com Launcher de Agarrão",
+      "text": "Agarrão, ANTI-AIR + LP, Rede, ANTI-AIR + HP HP (ou JK) - (25%)"
+    },
+    {
+      "title": "Juggle de Canto",
+      "text": " ANTI-AIR + HP, Rede, JK, Rede, JK, RH, HK ,(ou air throw) - (70%)"
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

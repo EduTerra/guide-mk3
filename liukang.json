@@ -1,0 +1,113 @@
+{
+  "theme": {
+    "primary": "#FF0000",
+    "secondary": "#FF9747",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Liu Kang",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Liu-Kang.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "C",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "High Fireball",
+      "shortDesc": "can be done in air too",
+      "inputs": "F, F, HP",
+      "image": ""
+    },
+    {
+      "name": "Low Fireball",
+      "shortDesc": "F, F, LP",
+      "inputs": "F, F, LP",
+      "image": ""
+    },
+    {
+      "name": "Flying Kick",
+      "shortDesc": "F, F, HK",
+      "inputs": "F, F, HK",
+      "image": ""
+    },
+    {
+      "name": "Bicycle Kick",
+      "shortDesc": "Hold LK for 3 seconds, then release",
+      "inputs": "Hold LK for 3 seconds, then release",
+      "image": "",
+      "supportText": "Hold"
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "25%",
+      "inputs": "LK, LK, HK, LK"
+    },
+    {
+      "name": "Combo",
+      "damage": "28%",
+      "inputs": "HP, LK, LK, HK, B+ HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "36%",
+      "inputs": "HP, HP, BLK, LK, LK, HK, B + LK"
+    },
+    {
+      "name": "Combo",
+      "damage": "28%",
+      "inputs": "Jump Kick, High Fireball, Flying Kick"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "",
+      "inputs": "F, F, D, D, LK"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "",
+      "inputs": "hold BLK, Up, D, Up, Up, release BLK, BLK + RUN",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Animality",
+      "desc": "sweep",
+      "inputs": "D, D, Up"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "D, D, D, HK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "",
+      "inputs": "RUN, RUN, RUN, D + RUN"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "RUN, BLK, BLK, LK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "O herói tradicional ficou apenas \"ok\" no MK3. A sua bicicleta e os dragões voadores são bons, mas ele sofre para furar a defesa de personagens com Run-Jabs melhores, como o Jax."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

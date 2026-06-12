@@ -1,0 +1,19 @@
+{
+  "roster": [
+    { "name": "CYRAX", "image": "Imagens/MK3/Cyrax.png", "file": "cyrax.json" },
+    { "name": "JAX", "image": "Imagens/MK3/Jax.png", "file": "jax.json" },
+    { "name": "KABAL", "image": "Imagens/MK3/Kabal.png", "file": "kabal.json" },
+    { "name": "KANO", "image": "Imagens/MK3/Kano.png", "file": "kano.json" },
+    { "name": "KUNG LAO", "image": "Imagens/MK3/Kung Lao.png", "file": "kunglao.json" },
+    { "name": "LIU KANG", "image": "Imagens/MK3/Liu-Kang.png", "file": "liukang.json" },
+    { "name": "NIGHTWOLF", "image": "Imagens/MK3/Nightwolf.png", "file": "nightwolf.json" },
+    { "name": "SEKTOR", "image": "Imagens/MK3/Sektor.png", "file": "sektor.json" },
+    { "name": "SHANG TSUNG", "image": "Imagens/MK3/Shang-Tsung.png", "file": "shangtsung.json" },
+    { "name": "SHEEVA", "image": "Imagens/MK3/Sheeva.png", "file": "sheeva.json" },
+    { "name": "SINDEL", "image": "Imagens/MK3/Sindel.png", "file": "sindel.json" },
+    { "name": "SMOKE", "image": "Imagens/MK3/Smoke.png", "file": "smoke.json" },
+    { "name": "SONYA", "image": "Imagens/MK3/Sonya-Blade.png", "file": "sonya.json" },
+    { "name": "STRYKER", "image": "Imagens/MK3/Stryker.png", "file": "stryker.json" },
+    { "name": "SUB-ZERO", "image": "Imagens/MK3/Sub-Zero.png", "file": "subzero.json" }
+  ]
+}

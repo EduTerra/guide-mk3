@@ -1,0 +1,128 @@
+{
+  "theme": {
+    "primary": "#B51414",
+    "secondary": "#A15512",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Kung Lao",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Kung-Lao.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "A",
+  "strengths": [
+    "Ótimo Rushdown, com pressão com Kara Jab, Joelhada com Stagger, Teleportes, Divekick seguro quando whiffa.",
+    "Agarrão com muitos +Frames, possibilitando um Mixup com Dive Kick.",
+    "Ótimo anti-aéreo com o Spin, talvez o melhor do jogo. E é possível levar para uma infinita contra qualquer personagem.",
+    "Escapa facilmente dos cantos."
+  ],
+  "weaknesses": [
+    "Muito difícil de masterizar os comandos e estratégias.",
+    "Gancho whiffa de vez em quando."
+  ],
+  "specialMoves": [
+    {
+      "name": "Hat Throw",
+      "shortDesc": "Arremeça o chapéu.",
+      "inputs": "B, F, LP",
+      "image": "",
+      "supportText": "É um projétil lento, porém faz um arco que pode confundir inimigos. É importante apenas para extender combos feitos no canto."
+    },
+    {
+      "name": "Teleport",
+      "shortDesc": "Se teleporta para o lado oposto do inimigo.",
+      "inputs": "D, U",
+      "image": "",
+      "supportText": "Movimento arriscado, útil quando tentar um bait do inimigo pra te arremeçar um projétil."
+    },
+    {
+      "name": "Dive Kick",
+      "shortDesc": "Desce rapidamente em diagonal para frente com um chute.",
+      "inputs": "D + HK, (no ar)",
+      "image": "",
+      "supportText": "Golpe especial muito importante, tanto para acertar quanto para se movimentar para mais perto dos inimigos. Importante aprender a Whiffar esse golpe para conseguir fazer as infinitas, ao acertar um JK em anti-aéreo faça o Dive Kick imediatamente."
+    },
+    {
+      "name": "Spin",
+      "shortDesc": "Gira rapidamente lançando o inimigo para o ar.",
+      "inputs": "F, D, F, RUN",
+      "image": "",
+      "supportText": " O golpe especial mais valioso do personagem. Antes do Hit, fique apertando RUN para continuar o movimento. No MK3 vanilla o hitbox é meio esquisito e causa puskback ao acertar no canto. Porém não ativa o Damage Protection como acontece no Ultimate e Trilogy (que reduziria o dano pela metade)."
+    }
+  ],
+  "combos": [
+        {
+      "name": "Combo",
+      "damage": "34%",
+      "inputs": "HP, LP, HP, LP, LK, LK, B + HK"
+    },
+        {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "LK, LK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, LK, B + HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "Qualquer Lugar",
+      "inputs": "RUN, BLK, RUN, BLK, D"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "Perto",
+      "inputs": "F, F, B, D, HP"
+    },
+    {
+      "name": "Animality",
+      "desc": "Perto",
+      "inputs": "RUN, RUN, RUN, RUN, BLK"
+    },
+    {
+      "name": "Babality",
+      "desc": "Meia Tela",
+      "inputs": "D, F, F, HP"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Meia Tela",
+      "inputs": "RUN, LP, RUN, LK"
+    },
+    {
+      "name": "Stage",
+      "desc": "Meia Tela",
+      "inputs": "D, D, F, F, LK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "O rei das infinitas. O seu Spin no Arcade puxa o oponente mesmo que ele esteja ligeiramente afastado, funcionando como um anti-aéreo perfeito que pode levar a combos infinitos."
+    },
+    {
+      "title": "Juggle Basico",
+      "text": "ANTI-AIR + HP, JK, Dive Kick - 31%"
+    },
+    {
+      "title": "A Infinita",
+      "text": "ANTI-AIR + Spin, JK, Dive Kick (pra whiffar e colar no inimigo), ANTI-AIR + HP, Repita o Loop a partir do JK.<BR><BR> Se chegar até o canto, duas opções pra finalizar:<BR>1. Spin, HK, Roundhouse, Rasteira<BR>2. Spin, U, HK, Dive Kick (agora acertando), Loop a partir do Spin."
+    },
+    {
+      "title": "O JK pra trás",
+      "text": "Ao estar próximo da CPU e pular pra trás com chute a tendência é ela soltar uma magia, que é facilmente punível com o Dive Kick. Também pode funcionar contra oponentes humanos."
+    },    
+    {
+      "title": "Recuperação do Dive Kick",
+      "text": "A recuperação do Dive Kick é bem alta, sendo possível ser usado pra fazer um Bait contra o oponente, fazendo o Dive Kick bem baixo no chão e logo depois defender, pra tentar punir qualquer iniciativa no inimigo."
+    }  
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

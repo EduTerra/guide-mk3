@@ -1,0 +1,67 @@
+{
+  "theme": { 
+      "primary": "#00b4d8",
+      "secondary": "#9b5de5",
+      "tertiary": "#d90429",
+      "bgAccent": "#0a0a0a" 
+  },
+  "character": {
+    "name": "SUB-ZERO",
+    "subtitle": "UNMASKED",
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400&auto=format&fit=crop&q=60",
+    "history": "O Grão-Mestre dos Lin Kuei, Sub-Zero é um guerreiro de honra e lealdade. Após o torneio anterior, ele continua sua missão de proteger Earthrealm das ameaças de Outworld e de seu irmão traiçoeiro, Scorpion. Frio, calculista e implacável, Sub-Zero usa seus poderes de gelo para congelar o mal em sua origem."
+  },
+  "tier": "B",
+  "strengths": [
+    "Botões de Normais com alcances ótimos no geral.",
+    "Controle de espaço muito bom.",
+    "Punição de LK, HK, Rasteira facilmente com slide.",
+    "Um bom agarrão, que reseta o neutro.",
+    "Ótimos anti-aéreos."
+  ],
+  "weaknesses": [
+    "Hurtbox grande facilitando pros oponentes acertarem tudo.",
+    "Combos com dano geral muito baixo, bem menor que a média."
+  ],
+  "specialMoves": [
+    { "name": "Ice Blast", "shortDesc": "Magia congelante.", "inputs": ["⬇", "➡", "LP"], "supportText": "Limite de 1 acerto (quebrável para 2), permitindo até 3 congelamentos por combo.", "image": "https://picsum.photos/72/54?random=1" },
+    { "name": "Ice Clone", "shortDesc": "Clone de gelo fixo.", "inputs": ["⬇", "⬅", "LP"], "supportText": "Pode ser feito no ar. Excelente para zoneamento. Cancele ataques com ele.", "image": "https://picsum.photos/72/54?random=2" },
+    { "name": "Ice Shower (Frente)", "shortDesc": "Cai na frente.", "inputs": ["⬇", "➡", "⬅", "HP"], "supportText": "Lança o bloco de gelo caindo na frente do oponente.", "image": "https://picsum.photos/72/54?random=3" },
+    { "name": "Ice Shower (Cima)", "shortDesc": "Cai em cima.", "inputs": ["⬇", "➡", "HP"], "supportText": "Lança o bloco de gelo caindo diretamente em cima.", "image": "https://picsum.photos/72/54?random=4" },
+    { "name": "Ice Shower (Atrás)", "shortDesc": "Cai atrás.", "inputs": ["⬇", "⬅", "➡", "HP"], "supportText": "Lança o bloco de gelo caindo atrás do oponente.", "image": "https://picsum.photos/72/54?random=5" },
+    { "name": "Slide", "shortDesc": "Rasteira deslizante.", "inputs": ["⬅", "+", "LP", "+", "BLK", "+", "LK"], "supportText": "Adiciona dano em juggles e como wake up. Extremamente punível.", "image": "https://picsum.photos/72/54?random=6" }
+  ],
+  "combos": [
+    { "name": "5 Hits", "damage": "23%", "inputs": ["HP", "HP", "LP", "LK", "HK", "⬅", "+", "HK"] },
+    { "name": "5 Hits", "damage": "26%", "inputs": ["HP", "HP", "LK", "HK", "⬅", "+", "HK"] },
+    { "name": "4 Hits", "damage": "22%", "inputs": ["HP", "HP", "LP", "⬅", "+", "HK"] },
+    { "name": "3 Hits", "damage": "19%", "inputs": ["HK", "HK", "⬅", "+", "HK"] },
+    { "name": "3 Hits", "damage": "18%", "inputs": ["HP", "HP", "⬅", "+", "HK"] }
+  ],
+  "finishers": [
+    { "name": "Fatality 1", "type": "fatality", "desc": "Varredura 💀", "inputs": ["⬅", "⬅", "⬇", "⬅", "RUN"] },
+    { "name": "Fatality 2", "type": "fatality", "desc": "Perto 💀", "inputs": ["BLK", "BLK", "RUN", "BLK", "RUN"] },
+    { "name": "Animality", "type": "animality", "desc": "Perto 🐯", "inputs": ["Hold BLK", "➡", "➡", "⬆", "⬆", "Release BLK"] },
+    { "name": "Babality", "type": "babality", "desc": "Qualquer Distância 👶", "inputs": ["⬇", "⬅", "⬅", "HK"] },
+    { "name": "Friendship", "type": "friendship", "desc": "Qualquer Distância 🤝", "inputs": ["LK", "RUN", "RUN", "⬆"] },
+    { "name": "Stage Fatality", "type": "stage", "desc": "Perto 🛑", "inputs": ["⬅", "⬇", "➡", "➡", "HK"] }
+  ],
+  "strategies": [
+    { "title": "1. Juggle Simples", "text": "ANTI-AIR freeze, ANTI-AIR HP, freeze, ANTI-AIR (HP,HP), JK, slide, 5 hits 43%" },
+    { "title": "2. Combo comum", "text": "freeze, cross up jump kick, freeze, ANTI-AIR (HP HP), JK, slide 5 hits 33%" },
+    { "title": "3. Juggle Geral", "text": "ANTI-AIR HP, freeze, cross up JK, ANTI-AIR HK or JK 36 and 37%" }
+  ],
+  "curiosities": [
+    "Essa é a primeira versão sem máscara do personagem nos arcades.",
+    "Revelou oficialmente Kuai Liang como sucessor do Sub Zero original, que virou o Noob Saibot.",
+    "Esse novo visual dividiu opiniões na época, mas se tornou um dos mais icônicos da franquia."
+  ],
+  "roster": [
+    { "name": "SUB-ZERO", "image": "https://picsum.photos/60/60?random=20", "file": "subzero.json" },
+    { "name": "SCORPION", "image": "https://picsum.photos/60/60?random=21", "file": "scorpion.json" },
+    { "name": "LIU KANG", "image": "https://picsum.photos/60/60?random=22", "file": "liukang.json" },
+    { "name": "SONYA", "image": "https://picsum.photos/60/60?random=23", "file": "sonya.json" },
+    { "name": "CYRAX", "image": "https://picsum.photos/60/60?random=24", "file": "cyrax.json" },
+    { "name": "SEKTOR", "image": "https://picsum.photos/60/60?random=25", "file": "sektor.json" }
+  ]
+}

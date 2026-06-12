@@ -1,0 +1,117 @@
+{
+  "theme": {
+    "primary": "#CCA576",
+    "secondary": "#FF0000",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Sheeva",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Sheeva.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "E",
+  "strengths": [
+    "Os Jabs HP são ótimos.",
+    "Ótimos arremeços.",
+    "Consegue fugir do canto com Teleporte"
+  ],
+  "weaknesses": [
+    "Os anti-aéreos são fracos.",
+    "Glitch quando está defendendo agachada o jogo considera que ela está defendendo em pé."
+  ],
+  "specialMoves": [
+      {
+      "name": "Fireball",
+      "shortDesc": "Solta magia de fogo",
+      "inputs": "D, F, HP",
+      "image": "",
+      "supportText": "Causa um bom dano e tem  um bom hitbox, por caisa disso é mais fácil punir Jump Kicks com ele. É possível usar em juggles."
+    },
+        {
+      "name": "Teleport Stomp",
+      "shortDesc": "Teleporte e caia em cima do oponente",
+      "inputs": "D, Up",
+      "image": "",
+      "supportText": "Apesar de muitas pessoas abusarem desse golpe, é muito fácil de desviar, apenas ande para trás. Única situação para usar de forma segura é quando o oponente está fugindo pulando para trás para além da metade da tela."
+    },
+    {
+      "name": "Ground Stomp",
+      "shortDesc": "Cause terremoto pulando no chão",
+      "inputs": "B, D, B, HK",
+      "image": "",
+      "supportText": "Quase inútil contra jogadores reais. Talve contra a CPU a distancia longa pode servir."
+    }
+  ],
+  "combos": [
+      {
+      "name": "Combo",
+      "damage": "42%",
+      "inputs": "HP, HP, LP, HK, HK, LK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "27%",
+      "inputs": "HK, HK, LK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "25%",
+      "inputs": "HP, HP, LP, F + HP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "Perto",
+      "inputs": "F, D, D, F, LP"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "Perto",
+      "inputs": "Hold + HK, B, F, F",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Animality",
+      "desc": "Rasteira",
+      "inputs": "RUN, BLK, BLK, BLK, BLK"
+    },
+    {
+      "name": "Babality",
+      "desc": "Além de Rasteira",
+      "inputs": "D, D, D, B, HK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Além de Rasteira",
+      "inputs": "F, F, D, F, espere, HP"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "D, F, D, F, LP"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Personagem Low Tier, apesar de ter combos que causam muito dano é muito difícil de ter oportunidades de usar eles. Tem um hurtbox muito grande, fazendo com que ela fique vulnerável a muitos ataques. <BR><BR> O melhor jeito de jogar com ela é usando o combo de chute (HK, HK, LK, B + HK), pois tem um bom alcance e pode pegar os adversários desprevenidos. <BR><BR> Outra estratégia com ela é tentar atacar nos WakeUps com magias e teleporte.<BR><BR>A capacidade de fazer Juggles é quase inesistente."
+    },
+    {
+      "title": "Juggle de Agarrão",
+      "text": "Agarrão, HK - 28%."
+    },
+        {
+      "title": "Juggle Anti Aéreo",
+      "text": "ANTI-AIR, HP HP, Jump Kick ou Fireball - 28%."
+    },
+    {
+      "title": "Juggle de Canto",
+      "text": "Agarrão, D + LP, Gancho - 33%."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

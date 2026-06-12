@@ -1,0 +1,168 @@
+{
+  "theme": {
+    "primary": "#00b4d8",
+    "secondary": "#9b5de5",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Sub-Zero",
+    "quote": "Essa luta será a sua última.",
+    "image": "Imagens/MK3/Historia-SubZero.png",
+    "history": "O Grão-Mestre dos Lin Kuei, Sub-Zero é um guerreiro de honra e lealdade. Após o torneio anterior, ele continua sua missão de proteger Earthrealm das ameaças de Outworld e de seu irmão traiçoeiro, Scorpion. Frio, calculista e implacável, Sub-Zero usa seus poderes de gelo para congelar o mal em sua origem."
+  },
+  "tier": "B",
+  "strengths": [
+    "Botões de Normais com alcances ótimos no geral.",
+    "Controle de espaço muito bom.",
+    "Punição de LK, HK, Rasteira facilmente com slide.",
+    "Um bom agarrão, que reseta o neutro.",
+    "Ótimos anti-aéreos."
+  ],
+  "weaknesses": [
+    "Hurtbox grande facilitando pros oponentes acertarem tudo.",
+    "Combos com dano geral muito baixo, bem menor que a média."
+  ],
+  "specialMoves": [
+    {
+      "name": "Ice Ball",
+      "shortDesc": "Magia de gelo para frente",
+      "inputs": "D, F, LP",
+      "image": "Imagens/MK3/SpecialMove-Sub-Zero-01.png",
+      "supportText": "Limite de 1 acerto (quebrável para 2), permitindo até 3 congelamentos por combo."
+    },
+    {
+      "name": "Ice Clone",
+      "shortDesc": "Cria um clone de gelo",
+      "inputs": "D, B, LP",
+      "image": "",
+      "supportText": "Golpe muito único e útil, bom para controlar o espaço. Quando feito no ar a área do clone fica maior."
+    },
+    {
+      "name": "Ice Shower",
+      "shortDesc": "Solta uma magia de gelo pra cima",
+      "inputs": "",
+      "image": "",
+      "supportText": "Excelente para mind games, pois como tem 3 variações faz com que o inimigo nunca sabe onde irá cair e fique com medo de se movimentar errado."
+    },
+    {
+      "name": "- Over",
+      "shortDesc": "Gelo cai sobre a cabeça do inimigo.",
+      "inputs": "D, F, HP",
+      "image": ""
+    },
+    {
+      "name": "- Front",
+      "shortDesc": "Gelo cai na frente do inimigo.",
+      "inputs": "D, F, B, HP",
+      "image": ""
+    },
+    {
+      "name": "- Behind",
+      "shortDesc": "Gelo cai atrás cabeça do inimigo.",
+      "inputs": "D, B, F, HP",
+      "image": ""
+    },
+    {
+      "name": "Slide",
+      "shortDesc": "Desliza para frente.",
+      "inputs": "B + LP + BLK + LK",
+      "image": "",
+      "supportText": "Bom para adicionar dano a juggle combos e wake ups, mas muito punível."
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "23% - a CPU faz 30%",
+      "inputs": "HP, HP, LP, LK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "26%",
+      "inputs": "HP, HP, LK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, LP, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, B + HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality1",
+      "desc": "Metade da Tela",
+      "inputs": "B, B, D, B, RUN"
+    },
+    {
+      "name": "Fatality2",
+      "desc": "Perto",
+      "inputs": "BLK, BLK, RUN, BLK, RUN"
+    },
+    {
+      "name": "Animality",
+      "desc": "Qualquer lugar",
+      "inputs": "Segure BLK, F, F, Up, Up, Solte",
+      "supportText": ""
+    },
+    {
+      "name": "Babality",
+      "desc": "Qualquer lugar",
+      "inputs": "D, B, B, HK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Qualquer lugar",
+      "inputs": "LK, RUN, RUN, U"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "B, D, F, F, HK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia Básica",
+      "text": "É um personagem onde o controle de espaço é o que mais importa, abuse do ice clone e crie mind games com os ice showers. O clone foi nerfado na versão Ultimate onde não é mais possível usá-lo próximo do inimigo, porém na versão original ele é possível ser usado pra cancelar botoes, criando armadilhas muito perigosas. Devido os combos serem fracos, o ideal é tentar levar o inimigo para o canto, onde tem combos mais fortes. <BR> <BR> Não existe uma forma segura de jogar com o Sub-Zero e causar dano alto, você sempre terá que arriscar algum Juggle. Mas se não se importar com dano e quiser jogar seguro finalize um congelamento com um gancho (D + HP), ou use esse combo: HP, HP, LK, HK, B + HK (não use o combo maior, ela é mais arriscado de fazer e causa menos dano, sabe se lá porque)."
+    },
+    {
+      "title": "Anti Aéreos",
+      "text": "Sub-Zero tem muitas opções de ANTI-AIR, sendo elas: HP, HK, Gancho, Ice Clone e Ice Shower. E para Crossups é possivel usar o Slide."
+    },
+    {
+      "title": "Bait do Falso Jump Kick",
+      "text": "Nessa versão vanilla do MK3 é possível cancelar golpes com Ice Clone mesmo próximo do inimigo, por isso é possível um Jump Kick ou Jump Punch e Clone na sequencia, ou até mesmo pular e já fazer o clone na metade do arco, pra tentar pegar o oponente de surpresa tentando um anti aéreo."
+    },
+    {
+      "title": "Links Fáceis",
+      "text": "Cross Jump Kick, Slide | Jump Punch (ou Kick), Ice Clone (Até mesmo na defesa, e se feito no canto ao acertar o chute quase garnte o congelamento)."
+    },
+    {
+      "title": "Links Difíceis (tempo preciso e dependente de Hitbox)",
+      "text": "Cross Jump Kick, Ice Ball (chute quase no chão) | HP, Ice Ball"
+    },
+    {
+      "title": "Juggle Anti Aéreo",
+      "text": "ANTI-AIR, Freeze, Jump Kick, Slide - 30%."
+    },
+    {
+      "title": "Juggle Canto",
+      "text": "Jump Kick, Ice Clone, U, HK (quase no chão), Roundhouse - 29%."
+    }
+  ],
+  "curiosities": [
+    "Essa é a primeira versão sem máscara do personagem nos arcades.",
+    "Revelou oficialmente Kuai Liang como sucessor do Sub Zero original, que virou o Noob Saibot.",
+    "Esse novo visual dividiu opiniões na época, mas se tornou um dos mais icônicos da franquia."
+  ]
+}

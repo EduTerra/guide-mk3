@@ -1,0 +1,126 @@
+{
+  "theme": {
+    "primary": "#65703A",
+    "secondary": "#40362B",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Kabal",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Kabal.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "AAA",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "Tornado Spin",
+      "shortDesc": "B, F, LK",
+      "inputs": "B, F, LK",
+      "image": ""
+    },
+    {
+      "name": "Fireball",
+      "shortDesc": "can be done in air too",
+      "inputs": "B, B, HP",
+      "image": ""
+    },
+    {
+      "name": "Ground Razor",
+      "shortDesc": "B, B, B, R",
+      "inputs": "B, B, B, RUN",
+      "image": ""
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HP, HP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "25%",
+      "inputs": "LK, LK HP, HP, HP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "28%",
+      "inputs": "LK, LK, HP, HP, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "25%",
+      "inputs": "HP, HP, D + LP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "28%",
+      "inputs": "LK, LK, HP, HP, D + LP, D + HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "25%",
+      "inputs": "HP, HP, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "27%",
+      "inputs": "LK, LK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "21%",
+      "inputs": "LK, LK, B + HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "sweep",
+      "inputs": "D, D, B, F, BLK"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "close",
+      "inputs": "RUN, BLK, BLK, BLK, HK"
+    },
+    {
+      "name": "Animality",
+      "desc": "close",
+      "inputs": "Hold HP, F, F, D, F, then release HP",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "RUN, RUN, LK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "",
+      "inputs": "RUN, LK, RUN, RUN, Up"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "BLK, BLK, HK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "O Top 1 incontestável. No Arcade, a sua magia aérea (Purple Blast) não tem tempo de recuperação (recovery frames). Ele pode pular, soltar a magia e se defender antes de tocar o chão. Além disso, o Tornado Spin pune qualquer pixel de erro do oponente, levando a combos fáceis de quase 30% de dano."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

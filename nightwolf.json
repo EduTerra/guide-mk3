@@ -1,0 +1,117 @@
+{
+  "theme": {
+    "primary": "#1F58F2",
+    "secondary": "#0F193B",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Nightwolf",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Nightwolf.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "B",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "Shoulder Ram",
+      "shortDesc": "F, F, LK",
+      "inputs": "F, F, LK",
+      "image": ""
+    },
+    {
+      "name": "Arrow Shot",
+      "shortDesc": "D, B, LP",
+      "inputs": "D, B, LP",
+      "image": ""
+    },
+    {
+      "name": "Hatchet Swipe",
+      "shortDesc": "D, F, HP",
+      "inputs": "D, F, HP",
+      "image": ""
+    },
+    {
+      "name": "Projectile Reflection",
+      "shortDesc": "B, B, B, HK",
+      "inputs": "B, B, B, HK",
+      "image": ""
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "23%",
+      "inputs": "HP, HP, LP, D, F, HP"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, LP, HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "27%",
+      "inputs": "LK, HP, HP, LP, HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "28%",
+      "inputs": "LK, HP, HP, LP, D, F, HP"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "close",
+      "inputs": "Hold BLK, Up, Up, B, F, release BLK, BLK",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "sweep",
+      "inputs": "B, B, D, HP"
+    },
+    {
+      "name": "Animality",
+      "desc": "close",
+      "inputs": "F, F, D, D"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "F, B, F, B, LP"
+    },
+    {
+      "name": "Friendship",
+      "desc": "sweep",
+      "inputs": "RUN, RUN, RUN, D"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "RUN, RUN, BLK"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Subestimado no Vanilla. O seu Shoulder Tackle (Ombrada) é incrivelmente rápido e serve como uma resposta instantânea para contra-ataques. Ele ainda conta com o escudo que reflete magias, anulando os oponentes que gostam de jogar recuados."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,400;0,700;1,700&family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --primary: #00b4d8; 
+    --secondary: #9b5de5; 
+    --tertiary: #d90429;
+    --bg-color: #050505;
+    --panel-bg: #0a0a0a;
+    --text-light: #ffffff;
+    --btn-red: #d00000;
+    --btn-gray: #343a40;
+    --btn-dark: #1a1f26;
+    --green-solid: #4ade80;
+    --red-solid: #f87171;
+    --desc-color: #b0b8c0;
+    --desc-size: 0.8rem;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-size: 12px;
+    filter: sepia(0.30) saturate(0.80) brightness(0.85) contrast(0.85);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+    background-image: url('Imagens/General/PaperTexture.jpg');
+    background-size: auto 50%;
+    background-position: top left;
+    background-repeat: repeat;
+    opacity: 0.20;
+    mix-blend-mode: normal;
+}
+
+h1, h2, h3, .title-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+
+.header-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 16px;
+    background: transparent;
+    backdrop-filter: none;
+    z-index: 1;
+}
+.logo-banner-image {
+    z-index: 1;
+}
+.header-bar h1 {
+    font-size: 2rem; color: var(--text-light); font-style: italic; font-weight: 900;
+    text-shadow: 2px 2px 0 var(--primary); letter-spacing: 1px;
+}
+
+select {
+    background: #111; color: #fff; border: 2px solid var(--primary);
+    padding: 3px 8px; font-weight: bold; outline: none; font-size: 11px;
+    clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+}
+
+.logo-banner {
+    max-width: 1200px; margin: 0 auto 10px auto;
+    background: transparent; border: none;
+    position: relative; overflow: hidden;
+    width: 100%; height: 200px; max-height: 200px;
+}
+
+.logo-banner-image {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    height: 100%; width: auto;
+}
+
+.character-title-box { position: absolute; left: 20px; right: auto; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-start; text-align: left; width: min(65%, 520px); z-index: 1; }
+.profile-name { font-size: 3.2rem; color: #fff; line-height: 0.9; font-style: italic; font-weight: 900; text-shadow: 2px 2px 0 var(--primary); }
+.profile-sub { font-size: 1.1rem; color: var(--primary); font-weight: bold; letter-spacing: 2px; }
+
+.mk-guide {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: minmax(240px, 1fr) minmax(480px, 2fr) minmax(240px, 1fr); grid-template-rows: auto auto auto; gap: 10px;
+}
+
+.col-left, .col-mid, .col-right {
+    min-width: 0;
+}
+
+.col-left { grid-column: 1; grid-row: 1 / 3; display: flex; flex-direction: column; gap: 20px; }
+.col-mid { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; gap: 10px; }
+.col-right { grid-column: 3; grid-row: 1; display: flex; flex-direction: column; gap: 10px; }
+.row-bottom { grid-column: 2 / 4; grid-row: 2; }
+
+.panel {
+    background-color: var(--panel-bg); flex: 1; padding: 10px; display: flex; flex-direction: column; gap: 8px;
+    clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
+}
+
+.panel-title {
+    color: #ffffff; font-size: 1rem; font-style: italic; font-weight: 700; letter-spacing: 0.5px;
+    background-color: var(--theme-color); padding: 2px 15px 2px 8px; display: inline-flex; align-items: center; align-self: flex-start;
+    width: auto; clip-path: polygon(8px 0, 100% 0, calc(100% - 10px) 100%, 0 100%, 0 8px); margin-bottom: 2px;
+}
+
+.tier-block { display: flex; flex-direction: column; gap: 8px; }
+
+.story-banner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    min-height: 360px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.story-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 60%, transparent 100%);
+}
+
+.story-banner-content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.story-banner-content .panel-title {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 4px 12px 4px 8px;
+}
+
+.story-banner-content .story-quote {
+    color: var(--primary);
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 0;
+    clip-path: none;
+    text-align: left;
+}
+
+.story-text { color: #d7dde4; }
+
+.panel-wrapper { background-color: var(--theme-color); padding: 1px; flex: 0 0 auto; display: flex; flex-direction: column;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.panel-wrapper.gradient-primary-secondary { padding: 3px; background: linear-gradient(135deg, var(--primary), var(--secondary)); }
+.panel-wrapper.gradient-secondary-red { padding: 3px; background: linear-gradient(135deg, var(--secondary), var(--tertiary)); }
+.panel-wrapper.gradient-red-orange { padding: 3px; background: linear-gradient(135deg, var(--tertiary), #b54708); }
+.panel-wrapper.solid-yellow { padding: 3px; background: #ffd700; }
+
+.panel-wrapper.gradient-primary-secondary .panel,
+.panel-wrapper.gradient-secondary-red .panel,
+.panel-wrapper.gradient-red-orange .panel,
+.panel-wrapper.solid-yellow .panel { background-color: var(--panel-bg); }
+
+.panel-wrapper.stretch { flex: 1; }
+
+.row-bottom .panel-wrapper { flex: 0 0 auto; }
+
+.select-fighter-section { grid-column: 2 / 4; display: flex; flex-direction: column; gap: 8px; margin: 24px 0 28px 0; }
+.select-fighter-title {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 1rem;
+    background-color: var(--primary);
+    padding: 4px 14px 4px 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    width: auto;
+    white-space: nowrap;
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 10px) 100%, 0 100%, 0 8px);
+}
+
+.character-img { width: 100%; background-size: cover; background-position: center top; border: 1px solid rgba(255,255,255,0.1); }
+.desc-text { font-size: var(--desc-size); color: var(--desc-color); line-height: 1.3; }
+.support-text { font-size: 0.7rem; color: #88929b; font-style: italic; }
+
+.list-row { display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; }
+.list-row:last-child { margin-bottom: 0; }
+.move-item { gap: 6px !important; }
+.special-moves-container { display: flex; flex-direction: column; }
+.special-moves-container.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.list-name { color: var(--theme-color); font-weight: 900; font-size: 0.9rem; font-style: italic; text-transform: uppercase; }
+
+/* Elemento de Imagem do Golpe Real */
+.move-img-real { width: 68px; height: 51px; object-fit: cover; border: 1px solid var(--theme-color); flex-shrink: 0; margin-right: 8px; }
+
+.inputs-container { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; padding: 2px 0; min-width: 0; }
+.k-btn { display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; box-shadow: 1px 1px 0 #000; white-space: nowrap; min-width: 0; }
+.k-btn, .desc-text, .support-text, .list-name { overflow-wrap: anywhere; }
+
+/* Setas Direcionais (D-Pad) estilo clássico com ponto de direção */
+.k-dir {
+    background-color: var(--btn-dark);
+    border: 1px solid #4a5568;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.k-dir::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.35;
+    transform: translate(-50%, -50%);
+}
+.k-dir .dir-icon {
+    position: absolute;
+    font-size: 12px;
+    line-height: 1;
+    z-index: 1;
+}
+.k-dir.dir-U .dir-icon { top: 4px; left: 50%; transform: translateX(-50%); }
+.k-dir.dir-D .dir-icon { bottom: 4px; left: 50%; transform: translateX(-50%); }
+.k-dir.dir-L .dir-icon { left: 4px; top: 50%; transform: translateY(-50%); }
+.k-dir.dir-R .dir-icon { right: 4px; top: 50%; transform: translateY(-50%); }
+.k-dir.dir-UL .dir-icon { top: 4px; left: 4px; }
+.k-dir.dir-UR .dir-icon { top: 4px; right: 4px; }
+.k-dir.dir-DL .dir-icon { bottom: 4px; left: 4px; }
+.k-dir.dir-DR .dir-icon { bottom: 4px; right: 4px; }
+
+.k-atk { background-color: var(--btn-red); border: 1px solid #ff4d4d; color: white; height: 26px; width: 26px; border-radius: 50%; flex-shrink: 0; font-size: 13px; }
+.k-util { background-color: var(--btn-gray); border: 1px solid #6c757d; color: white; height: 22px; padding: 0 6px; font-size: 13px; clip-path: polygon(3px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%, 0 3px); }
+.k-anti-air { background-color: #ffb703; border: 1px solid #fb8500; color: #000; font-size: 12px; height: 20px; padding: 0 6px; clip-path: polygon(3px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%, 0 3px); }
+.separator { font-weight: bold; color: rgba(255,255,255,0.4); margin: 0 1px; font-size: 14px; }
+
+.strategy-item { margin-bottom: 6px; }
+.strategy-title { display: block; color: var(--theme-color); font-weight: 900; font-style: italic; font-size: 0.85rem; text-transform: uppercase; }
+
+.sw-list { list-style-type: none; margin: 7px 0 0 0; }
+.sw-list li { margin-bottom: 7px; position: relative; padding-left: 12px; font-size: 0.75rem; line-height: 1.7; }
+.sw-list li:last-child { margin-bottom: 0; }
+.sw-list li::before { content: "►"; position: absolute; left: 0; top: 4px; font-size: 0.64rem; }
+.strengths-list li::before { color: var(--green-solid); }
+.weaknesses-list li::before { color: var(--red-solid); }
+
+.curiosity-list { list-style-type: none; }
+.curiosity-list li { margin-bottom: 4px; position: relative; padding-left: 14px; }
+.curiosity-list li::before { content: "★"; position: absolute; left: 0; top: 0; font-size: 0.8rem; color: #ffd700; }
+
+.tier-grade { font-size: 4rem; font-weight: 900; font-family: 'Oswald', sans-serif; color: var(--primary); text-shadow: 2px 2px 0 #000; line-height: 1; }
+
+/* Grid de Seleção de Personagens */
+.roster-grid { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; margin-top: 4px; }
+.roster-item { background: #111; border: 1px solid #222; padding: 2px; text-align: center; cursor: pointer; display: flex; flex-direction: column; align-items: center; text-decoration: none; }
+.roster-item:hover, .roster-item.active { border-color: var(--primary); background: #161616; }
+.roster-img { width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid #000; }
+.roster-name { font-size: 8px; color: #fff; font-weight: bold; margin-top: 2px; font-family: 'Oswald', sans-serif; letter-spacing: 0.5px; }
+
+.footer { grid-column: 1 / -1; padding: 10px 0 5px 0; margin-top: 5px; border-top: 2px solid var(--primary); }
+.legend-title { color: #fff; font-weight: 900; font-style: italic; margin-bottom: 6px; display: block; font-family: 'Oswald'; }
+.legend-grid { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.75rem; color: #e2e8f0; }
+.legend-item:not(:first-child) { border-left: 1px solid rgba(255,255,255,0.1); padding-left: 10px; }
+
+@media (max-width: 950px) {
+    .mk-guide { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .col-left, .col-mid, .col-right, .row-bottom { grid-column: 1; grid-row: auto; }
+}

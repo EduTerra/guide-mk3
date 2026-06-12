@@ -1,0 +1,275 @@
+{
+  "theme": {
+    "primary": "#C9B91E",
+    "secondary": "#302E11",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Shang Tsung",
+    "quote": "The fight begins now.",
+    "image": "Imagens/MK3/Historia-Shang-Tsung.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "D",
+  "strengths": [
+    "Força e utilidade do personagem serão atualizadas.",
+    "Aprimore esta lista conforme você revisa o guia."
+  ],
+  "weaknesses": [
+    "Fraquezas ainda não definidas.",
+    "Checar características específicas no futuro."
+  ],
+  "specialMoves": [
+    {
+      "name": "Single Fireball",
+      "shortDesc": "B, B, HP",
+      "inputs": "B, B, HP",
+      "image": ""
+    },
+    {
+      "name": "Double Fireballs",
+      "shortDesc": "B, B, F, HP",
+      "inputs": "B, B, F, HP",
+      "image": ""
+    },
+    {
+      "name": "Triple Fireballs",
+      "shortDesc": "B, B, F, F, HP",
+      "inputs": "B, B, F, F, HP",
+      "image": ""
+    },
+    {
+      "name": "Triple Ground Fireballs",
+      "shortDesc": "F, B, B, LK",
+      "inputs": "F, B, B, LK",
+      "image": ""
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "28%",
+      "inputs": "LK, HP, HP, LP, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, LP, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "19%",
+      "inputs": "HK, HK, B + HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "close",
+      "inputs": "Hold LP, D, F, F, D",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "close",
+      "inputs": "Hold LP, RUN, BLK, RUN, BLK",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Animality",
+      "desc": "sweep",
+      "inputs": "Hold HP, RUN, RUN, RUN, release HP",
+      "supportText": "Hold"
+    },
+    {
+      "name": "Babality",
+      "desc": "",
+      "inputs": "RUN, RUN, RUN, LK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "",
+      "inputs": "LK, RUN, RUN, D"
+    },
+    {
+      "name": "Stage",
+      "desc": "",
+      "inputs": "Up, Up, B, LP"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Personagem muito básico, depende das transformações para ter mais opções."
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ],
+  "morphs": [
+    {
+      "name": "Cyrax",
+      "shortDesc": "BL, BL, BL",
+      "inputs": [
+        "BL",
+        "BL",
+        "BL"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Jax",
+      "shortDesc": "F, F, D, LP",
+      "inputs": [
+        "F",
+        "F",
+        "D",
+        "LP"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Kabal",
+      "shortDesc": "LP, BL, HK",
+      "inputs": [
+        "LP",
+        "BL",
+        "HK"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Kano",
+      "shortDesc": "B, F, BL",
+      "inputs": [
+        "B",
+        "F",
+        "BL"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Kung Lao",
+      "shortDesc": "R, R, BL, R",
+      "inputs": [
+        "R",
+        "R",
+        "BL",
+        "R"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Liu Kang",
+      "shortDesc": "360° forward",
+      "inputs": [
+        "D",
+        "B",
+        "Up",
+        "F",
+        "D"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Nightwolf",
+      "shortDesc": "Up, Up, Up",
+      "inputs": [
+        "Up",
+        "Up",
+        "Up"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Sektor",
+      "shortDesc": "D, F, B, R",
+      "inputs": [
+        "D",
+        "F",
+        "B",
+        "R"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Sheeva",
+      "shortDesc": "F, D, F, LK",
+      "inputs": [
+        "F",
+        "D",
+        "F",
+        "LK"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Sindel",
+      "shortDesc": "B, D, B, LK",
+      "inputs": [
+        "B",
+        "D",
+        "B",
+        "LK"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Sonya",
+      "shortDesc": "D + R + LP + BL",
+      "inputs": [
+        "D + R + LP + BL"
+      ],
+      "image": ""
+    },
+    {
+      "name": ", PC (MAT",
+      "shortDesc": "DE)",
+      "inputs": [
+        "DE)"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Sonya",
+      "shortDesc": "R + BL + LP",
+      "inputs": [
+        "R + BL + LP"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Stryker",
+      "shortDesc": "F, F, F, HK",
+      "inputs": [
+        "F",
+        "F",
+        "F",
+        "HK"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Sub-Zero",
+      "shortDesc": "F, D, F, HP",
+      "inputs": [
+        "F",
+        "D",
+        "F",
+        "HP"
+      ],
+      "image": ""
+    },
+    {
+      "name": "Smoke",
+      "shortDesc": "D, B, B, LP",
+      "inputs": [
+        "D",
+        "B",
+        "B",
+        "LP"
+      ],
+      "image": ""
+    }
+  ]
+}

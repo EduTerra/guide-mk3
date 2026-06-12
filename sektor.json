@@ -1,0 +1,111 @@
+{
+  "theme": {
+    "primary": "#D9072E",
+    "secondary": "#571D27",
+    "tertiary": "#d90429"
+  },
+  "character": {
+    "name": "Sektor",
+    "quote": "1001 110 0011 011.",
+    "image": "Imagens/MK3/Historia-Sektor.png",
+    "history": "História genérica do personagem. Atualize com a biografia específica depois."
+  },
+  "tier": "C",
+  "strengths": [
+    "Visual bem maneiro."
+  ],
+  "weaknesses": [
+    "Dano dos combos e juggles muito baixo",
+    "Anti-aéreos muito ruins."
+  ],
+  "specialMoves": [
+    {
+      "name": "Teleport Uppercut",
+      "shortDesc": "Um teleporte pra baixo, surgindo por baixo do inimigo com um soco.",
+      "inputs": "F, F, LK",
+      "image": "",
+      "supportText": "Um golpe muito bom mas muito abusado por jogadores casuais. A melhor utilidade é para linkar com algum Anti-Air ou punir magias/projéteis enviados de longe. É possível usar para criar um Bait ao atacar com JK e usá-lo para punir algum anti-aéreo."
+    },
+    {
+      "name": "Missile",
+      "shortDesc": "Solta um míssel para frente.",
+      "inputs": "F, F, LP",
+      "image": "",
+      "supportText": "Rápido, direto e reto. Bom para lançar de longe (contra personagens sem teleporte), para extender combos e para causar um cheap damage após um inimigo estiver defendendo depois de ter soltado um Homing Missil, ou então criar um padrão cruzado de projéteis que ficará difícil de desviar."
+    },
+    {
+      "name": "Homing Missile",
+      "shortDesc": "Solta um míssel tele-guiado.",
+      "inputs": "F, D, B, HP",
+      "image": "",
+      "supportText": "É um projétil muito único nesse jogo, pode lançar vários na tela sequencialmente. Bom ser enviado quando o oponente cair no chão ou então misturado com o Missile comum, pelos motivos já comentados."
+    }
+  ],
+  "combos": [
+    {
+      "name": "Combo",
+      "damage": "26%",
+      "inputs": "HP, HP, HK, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, HK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "18%",
+      "inputs": "HP, HP, D + LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "15%",
+      "inputs": "HK, HK"
+    }
+  ],
+  "finishers": [
+    {
+      "name": "Fatality 1",
+      "desc": "Rasteira",
+      "inputs": "LP, RUN, RUN, BLK"
+    },
+    {
+      "name": "Fatality 2",
+      "desc": "Tela Quase Inteira",
+      "inputs": "F, F, F, B, BLK"
+    },
+    {
+      "name": "Animality",
+      "desc": "Perto",
+      "inputs": "F, F, D, U"
+    },
+    {
+      "name": "Babality",
+      "desc": "Meia Tela",
+      "inputs": "B, D, D, D, HK"
+    },
+    {
+      "name": "Friendship",
+      "desc": "Meia Tela",
+      "inputs": "RUN, RUN, RUN, RUN, D"
+    },
+    {
+      "name": "Stage",
+      "desc": "Perto",
+      "inputs": "RUN, RUN, RUN, D"
+    }
+  ],
+  "strategies": [
+    {
+      "title": "Estratégia básica",
+      "text": "Sektor e Smoke compartilham o mesmo problema. O Teleport Uppercut deles é excelente para punir magias, mas se o oponente apenas abaixar e defender, o gancho de punição que eles tomam na volta é devastador. Sektor se sobressai um pouco pelo míssil teleguiado.<BR><BR>Os golpes normais são muito ruins, ganchos são fáceis de whiffar, o normal melhorzinho é o HK."
+    },
+    {
+      "title": "Juggles Basicos",
+      "text": "1. JK, Teleport, JK, Rasteira.<BR>2. JK, Teleport, ANTI-AIR HP, Missile. - 29%"
+    }
+  ],
+  "curiosities": [
+    "Curiosidade genérica. Substitua depois."
+  ]
+}
