@@ -12,37 +12,42 @@
   },
   "tier": "D",
   "strengths": [
-    "Força e utilidade do personagem serão atualizadas.",
-    "Aprimore esta lista conforme você revisa o guia."
+    "Hurtbox muito pequeno, muitos combos não funcionam contra ele.",
+    "Morph possibilita uma grande variedade de estratégias.",
+    "Bom zoner com uma grande variedade de projéteis."
   ],
   "weaknesses": [
-    "Fraquezas ainda não definidas.",
-    "Checar características específicas no futuro."
+    "Difícil de aprender e masterizar.",
+    "Combos do chão fracos.",
+    "Anti-aéreos muito fracos.",
+    "Hurtbox agachado muito grande."
   ],
   "specialMoves": [
     {
-      "name": "Single Fireball",
-      "shortDesc": "B, B, HP",
+      "name": "Fireball",
+      "shortDesc": "Lança um crânio flamejante.",
       "inputs": "B, B, HP",
-      "image": ""
+      "image": "",
+      "supportText": "Com 3 variações distindas pode pegar inimigos de surpresa, abusar do double é uma boa idéia já que a recuperação ainda é boa."
     },
     {
       "name": "Double Fireballs",
-      "shortDesc": "B, B, F, HP",
+      "shortDesc": "Lança 2 crânios flamejantes.",
       "inputs": "B, B, F, HP",
       "image": ""
     },
     {
       "name": "Triple Fireballs",
-      "shortDesc": "B, B, F, F, HP",
+      "shortDesc": "Lança 3 crânios flamejantes.",
       "inputs": "B, B, F, F, HP",
       "image": ""
     },
     {
       "name": "Triple Ground Fireballs",
-      "shortDesc": "F, B, B, LK",
+      "shortDesc": "Sumona 3 crânios que surgem de baixo pra cima.",
       "inputs": "F, B, B, LK",
-      "image": ""
+      "image": "",
+      "supportText": "Quando conecta abre oportunidade pra juggles e também para te dar tempo para usar os comandos de transformação."
     }
   ],
   "combos": [
@@ -65,211 +70,54 @@
   "finishers": [
     {
       "name": "Fatality 1",
-      "desc": "close",
-      "inputs": "Hold LP, D, F, F, D",
-      "supportText": "Hold"
+      "desc": "Perto",
+      "inputs": "Hold + LP, D, F, F, D"
     },
     {
       "name": "Fatality 2",
-      "desc": "close",
-      "inputs": "Hold LP, RUN, BLK, RUN, BLK",
-      "supportText": "Hold"
+      "desc": "Perto",
+      "inputs": "Hold + LP, RUN, BLK, RUN, BLK"
     },
     {
       "name": "Animality",
-      "desc": "sweep",
-      "inputs": "Hold HP, RUN, RUN, RUN, release HP",
-      "supportText": "Hold"
+      "desc": "Rasteira",
+      "inputs": "Hold + HP, RUN, RUN, RUN"
     },
     {
       "name": "Babality",
-      "desc": "",
+      "desc": "Meia Tela",
       "inputs": "RUN, RUN, RUN, LK"
     },
     {
       "name": "Friendship",
-      "desc": "",
+      "desc": "Rasteira",
       "inputs": "LK, RUN, RUN, D"
     },
     {
       "name": "Stage",
-      "desc": "",
+      "desc": "perto",
       "inputs": "Up, Up, B, LP"
     }
   ],
   "strategies": [
     {
       "title": "Estratégia básica",
-      "text": "Personagem muito básico, depende das transformações para ter mais opções."
+      "text": "Não é um bom personagem, porém se for usálo não subestime os morphs para criar versatilidade e imprevisibilidade nas partidas. Possível usar com segurança depois de um Roundrouse e  Ground Eruption. Cada morph fica ativo por 16 segundos do relógio do jogo."
+    },
+    {
+      "title": "Morphs",
+      "text": "Cyrax: BLK, BLK, BLK<BR>Jax: F, F, D, LP<BR>Kabal: LP, BLK, HK<BR>Kano: B, F, BLK<BR>Kung Lao: R, R, BLK, R<BR>Liu Kang: D, B, Up, F, D (360° forward)<BR>Nightwolf: U, U, U<BR>Sektor: D, F, B, R<BR>Sheeva: F, D, F, LK<BR>Sindel: B, <BR>, B, LK<BR>Sonya: D + R + LP + BLK<BR>Stryker: F, F, F, HK<BR>Sub-Zero: F, D, F, HP"
+    },
+    {
+      "title": "Juggles",
+      "text": "1. aaHP,HP, double fireball<BR> 2. GE, aaHP,HP, double fireball 7 hits 43%<BR>3. aaDouble Fireball, GE, aaHP,HP, aaHP, double fireball, 10 hits 65%"
+    },
+    {
+      "title": "Juggles com Morphs",
+      "text": "1. aaLP,(BL,HK for Kabal morph) spin, aaHP,HP, JK, air fireball<BR>2. GE, [Jax] aaHPHP, JK, air throw, 7 hits 59%<BR>3. GE, [Liu Kang] aaHPHP, JK, Air Fireball, Dragon Kick"
     }
   ],
   "curiosities": [
     "Curiosidade genérica. Substitua depois."
-  ],
-  "morphs": [
-    {
-      "name": "Cyrax",
-      "shortDesc": "BL, BL, BL",
-      "inputs": [
-        "BL",
-        "BL",
-        "BL"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Jax",
-      "shortDesc": "F, F, D, LP",
-      "inputs": [
-        "F",
-        "F",
-        "D",
-        "LP"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Kabal",
-      "shortDesc": "LP, BL, HK",
-      "inputs": [
-        "LP",
-        "BL",
-        "HK"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Kano",
-      "shortDesc": "B, F, BL",
-      "inputs": [
-        "B",
-        "F",
-        "BL"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Kung Lao",
-      "shortDesc": "R, R, BL, R",
-      "inputs": [
-        "R",
-        "R",
-        "BL",
-        "R"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Liu Kang",
-      "shortDesc": "360° forward",
-      "inputs": [
-        "D",
-        "B",
-        "Up",
-        "F",
-        "D"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Nightwolf",
-      "shortDesc": "Up, Up, Up",
-      "inputs": [
-        "Up",
-        "Up",
-        "Up"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Sektor",
-      "shortDesc": "D, F, B, R",
-      "inputs": [
-        "D",
-        "F",
-        "B",
-        "R"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Sheeva",
-      "shortDesc": "F, D, F, LK",
-      "inputs": [
-        "F",
-        "D",
-        "F",
-        "LK"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Sindel",
-      "shortDesc": "B, D, B, LK",
-      "inputs": [
-        "B",
-        "D",
-        "B",
-        "LK"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Sonya",
-      "shortDesc": "D + R + LP + BL",
-      "inputs": [
-        "D + R + LP + BL"
-      ],
-      "image": ""
-    },
-    {
-      "name": ", PC (MAT",
-      "shortDesc": "DE)",
-      "inputs": [
-        "DE)"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Sonya",
-      "shortDesc": "R + BL + LP",
-      "inputs": [
-        "R + BL + LP"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Stryker",
-      "shortDesc": "F, F, F, HK",
-      "inputs": [
-        "F",
-        "F",
-        "F",
-        "HK"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Sub-Zero",
-      "shortDesc": "F, D, F, HP",
-      "inputs": [
-        "F",
-        "D",
-        "F",
-        "HP"
-      ],
-      "image": ""
-    },
-    {
-      "name": "Smoke",
-      "shortDesc": "D, B, B, LP",
-      "inputs": [
-        "D",
-        "B",
-        "B",
-        "LP"
-      ],
-      "image": ""
-    }
   ]
 }

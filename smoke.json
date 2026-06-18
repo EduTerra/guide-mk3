@@ -12,38 +12,42 @@
   },
   "tier": "C",
   "strengths": [
-    "Força e utilidade do personagem serão atualizadas.",
-    "Aprimore esta lista conforme você revisa o guia."
+    "Ótimos agarrões, tanto o regular quanto no ar.",
+    "Combos e Juggles de punição dão muito dano",
+    "Fácil de criar armadilhas de canto"
   ],
   "weaknesses": [
-    "Fraquezas ainda não definidas.",
-    "Checar características específicas no futuro."
+    "Dano no chão é fraco",
+    "Jabs são ruins."
   ],
   "specialMoves": [
     {
       "name": "Harpoon",
-      "shortDesc": "B, B, LP",
+      "shortDesc": "Solta um arpão e puxa o oponente pra perto.",
       "inputs": "B, B, LP",
-      "image": ""
+      "image": "",
+      "supportText": "Golpe essencial, rápido e também seguro em bloqueios em tela cheia (a não ser contra personagens com teleporte)."
     },
     {
       "name": "Teleport Uppercut",
-      "shortDesc": "can be done in air too",
+      "shortDesc": "Se teleporta e ataca o oponente.",
       "inputs": "F, F, LK",
-      "image": ""
+      "image": "",
+      "supportText": "Pode ser feito no Ar. Muito usado por casuais, muito punível. Use somente se for linkar com algum anti aéreo ou punir projéteis soltos de longa distância."
     },
     {
       "name": "Air Throw",
-      "shortDesc": "in air",
-      "inputs": "BLK",
-      "image": ""
+      "shortDesc": "Agarrão feito ao pular.",
+      "inputs": "BLK, (no ar)",
+      "image": "",
+      "supportText": "O melhor air throw do jogo todo, a distância é enorme. "
     },
     {
       "name": "Invisibility",
-      "shortDesc": "Hold BL, Up, Up, R",
-      "inputs": "Hold BLK, Up, Up, RUN",
+      "shortDesc": "Fica invisível por 16 segundos do timer do jogo.",
+      "inputs": "Hold + BLK, Up, Up",
       "image": "",
-      "supportText": "Hold"
+      "supportText": "Bom contra jogadores humanos, mas é importante a leitura do jogador para não perder onde seu personagem está."
     }
   ],
   "combos": [
@@ -71,52 +75,63 @@
   "finishers": [
     {
       "name": "Fatality 1",
-      "desc": "full screen",
-      "inputs": "Hold BLK, Up, Up, F, D",
-      "supportText": "Hold"
+      "desc": "Tela Cheia",
+      "inputs": "Segure + BLK, Up, Up, F, D"
     },
     {
       "name": "Fatality 2",
-      "desc": "",
-      "inputs": "Hold RUN + BLK, D, D, F, Up (sweep)",
-      "supportText": "Hold"
-    },
-    {
-      "name": ", PC (MAT",
-      "desc": "",
-      "inputs": "DE)"
-    },
-    {
-      "name": "Fatality 2",
-      "desc": "",
-      "inputs": "Hold BLK, D, D, F, Up (sweep)",
-      "supportText": "Hold"
+      "desc": "Rasteira",
+      "inputs": "Hold + RUN + BLK, D, D, F, Up"
     },
     {
       "name": "Animality",
-      "desc": "full screen",
+      "desc": "Tela Cheia",
       "inputs": "D, F, F, BLK"
     },
     {
       "name": "Babality",
-      "desc": "",
+      "desc": "Qualquer Lugar",
       "inputs": "D, D, B, B, HK"
     },
     {
       "name": "Friendship",
-      "desc": "full screen",
+      "desc": "fTela Cheia",
       "inputs": "RUN, RUN, RUN, HK"
     },
     {
       "name": "Stage",
-      "desc": "",
+      "desc": "Perto",
       "inputs": "F, F, D, LK"
     }
   ],
   "strategies": [
     {
       "title": "Estratégia básica",
-      "text": "O personagem secreto do jogo, tem um estilo parecido com o Scorpion (que ficou de fora dessa versão) com arpão que puxa pra perto e teleporte, porém esse teleporte é bem punível."
+      "text": "O personagem secreto do jogo, tem um estilo parecido com o Scorpion (que ficou de fora dessa versão) com arpão que puxa pra perto e teleporte, porém esse teleporte é bem punível. É bom para ser usado como reação contra-atacando os oponentes, punindo magias de longe ou tentativas de ataques com jump kicks."
+    },
+    {
+      "title": "Punindo com Teleporte",
+      "text": "Quando acertar um teleporte terá algumas opções para continuar:<BR><BR>1. Teleporte, JP, Agarrão Aereo - 19%<BR>2. Teleporte, Spear, Roundhouse - 31%<BR>3. Teleporte, Run HP HP, Spear, HP HP LK HK, LP - 54%<BR><BR>Esse último, se for feito apís m JK o dano total cai para 40%."
+    },
+    {
+      "title": "Exploit LP, Spear",
+      "text": "Existe um  exploit de soco baixo onde um arpão linka se for feito bem rápido, e pode ser feito em looping (no ultimate só pode até 3 vezes), criando a possibilidade de fazer o seguinte combo:<BR><BR>JK, Teleporte, Run HP HP, Spear,HP, Spear, HP, Spear, HP HP LK HK LP - quase 80%"
+    },
+    {
+      "title": "Exploit Block, Jump Kick",
+      "text": "É possível soltar um arpão logo depois de defender um JK do inimigo."
+    },
+    {
+      "title": "Exploit Pulo pra trás, Teleporte contra CPU",
+      "text": "Na maioria das vezes que você pular para trás a CPU vai querer soltar um projétil, aproveite para fazer um teleporte e depois punir."
+    },
+    {
+      "title": "Exploit teleport infinito contra CPU",
+      "text": "Ao acertar um teleporte é possível soltar outro imediatamente."
+    },
+    {
+      "title": "Exploit do Block whiffando teleporte contra CPU no HARDEST",
+      "text": "Se o teleporte Whiffar bloqueie imediatamente, a CPU vai querer bater com algum normal imediatamente com vocÊ ainda no ar e irá whiffar, por isso quando cair no chão é possível bloquear e não tomar dano da CPU."
     }
   ],
   "curiosities": [

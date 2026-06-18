@@ -12,57 +12,50 @@
   },
   "tier": "B",
   "strengths": [
-    "Força e utilidade do personagem serão atualizadas.",
-    "Aprimore esta lista conforme você revisa o guia."
+    "Rasteira são safes no bloqueio.",
+    "Agarrão aéreo muito bom."
   ],
   "weaknesses": [
-    "Fraquezas ainda não definidas.",
-    "Checar características específicas no futuro."
+    "Difícil de jogar com ele."
   ],
   "specialMoves": [
     {
       "name": "Knife Throw",
-      "shortDesc": "D, B, HP",
+      "shortDesc": "Arremeça uma faca.",
       "inputs": "D, B, HP",
-      "image": ""
+      "image": "",
+      "supportText": "Não é muito rápida de início. Bom para usar quando oponentes estão fugindo pulando para trás."
     },
     {
       "name": "Knife Uppercut",
-      "shortDesc": "D, F, HP",
+      "shortDesc": "Quase um Uppercut feito com uma faca",
       "inputs": "D, F, HP",
-      "image": ""
-    },
-    {
-      "name": "Roll",
-      "shortDesc": "Hold LK for 3 seconds, then release",
-      "inputs": "Hold LK for 3 seconds, then release",
       "image": "",
-      "supportText": "Hold"
+      "supportText": "É um golpe que acerta Low e de uma boa distância. Da pra usar em juggles e como anti aéreo de distâncias mais longas."
     },
     {
-      "name": "Strangle Grab",
-      "shortDesc": "D, F, LP",
+      "name": "Cannonball",
+      "shortDesc": "Avança rapidapente pra frente em formato de bola.",
+      "inputs": "Hold + LK, 3s",
+      "image": "",
+      "supportText": "Bem rápido e sai instantaneamente, bom para usar em wakeups em distancia curta, também pode ser usado para extender combos."
+    },
+    {
+      "name": "Chokehold",
+      "shortDesc": "Agarrão de comando.",
       "inputs": "D, F, LP",
-      "image": ""
+      "image": "",
+      "supportText": "Só é realmente útil em combos e talvez em wakeups."
     },
     {
       "name": "Air Throw",
-      "shortDesc": "in air",
+      "shortDesc": "Agarre o oponente que estiver fora do chão.",
       "inputs": "BLK",
-      "image": ""
+      "image": "",
+      "supportText": "Agarrão no ar, bem útil."
     }
   ],
   "combos": [
-    {
-      "name": "Combo",
-      "damage": "22%",
-      "inputs": "HP, HP, D + LP, D + HP"
-    },
-    {
-      "name": "Combo",
-      "damage": "18%",
-      "inputs": "HP, HP, B + LP"
-    },
     {
       "name": "Combo",
       "damage": "26%",
@@ -70,8 +63,13 @@
     },
     {
       "name": "Combo",
-      "damage": "15%",
-      "inputs": "LK, LP"
+      "damage": "23%",
+      "inputs": "HK, HK, LK, B + HK"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "HP, HP, D + LP, D + HP"
     },
     {
       "name": "Combo",
@@ -80,41 +78,46 @@
     },
     {
       "name": "Combo",
-      "damage": "23%",
-      "inputs": "HK, HK, LK, B + HK"
+      "damage": "18%",
+      "inputs": "HP, HP, B + LP"
+    },
+    {
+      "name": "Combo",
+      "damage": "15%",
+      "inputs": "LK, LP"
     }
   ],
   "finishers": [
     {
       "name": "Fatality 1",
-      "desc": "close",
+      "desc": "Perto",
       "inputs": "Hold LP, F, D, D, F, release LP",
       "supportText": "Hold"
     },
     {
       "name": "Fatality 2",
-      "desc": "sweep",
+      "desc": "Rasteira",
       "inputs": "LP, BLK, BLK, HK"
     },
     {
       "name": "Animality",
-      "desc": "close",
+      "desc": "Perto",
       "inputs": "Hold HP, BLK, BLK, BLK, release HP",
       "supportText": "Hold"
     },
     {
       "name": "Babality",
-      "desc": "",
+      "desc": "Qualquer Lugar",
       "inputs": "F, F, D, D, LK"
     },
     {
       "name": "Friendship",
-      "desc": "outside sweep",
+      "desc": "Meia Tela",
       "inputs": "LK, RUN, RUN, HK"
     },
     {
       "name": "Stage",
-      "desc": "",
+      "desc": "Perto",
       "inputs": "Up, Up, B, LK"
     }
   ],
@@ -122,6 +125,14 @@
     {
       "title": "Estratégia básica",
       "text": "Se tornou uma potência no MK3. O seu agarrão de comando (Choke) ignora a defesa se o oponente estiver colado. A faca rápida e o Cannonball dão a ele um controle de espaço absurdo."
+    },
+    {
+      "title": "Links",
+      "text": "1. Chokehold, Cannonball<BR>2. JK = (quase no chão, e segure o botão pra carregar o cannonball),LK, Chokehold, Cannonball"
+    },
+    {
+      "title": "Juggles",
+      "text": "1. HP, HP, D + LP, D + HP, ANTI-AEREO + HP, JK, Air Throw<BR>2. HP, HP, D + LP, D + HP, JK = (quase no chão, e segure o botão pra carregar o cannonball),LK, Chokehold, Cannonball"
     }
   ],
   "curiosities": [

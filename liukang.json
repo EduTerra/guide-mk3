@@ -12,36 +12,37 @@
   },
   "tier": "C",
   "strengths": [
-    "Força e utilidade do personagem serão atualizadas.",
-    "Aprimore esta lista conforme você revisa o guia."
+    "Bons jabs.",
+    "Pune teleportes com combo de até 50%."
   ],
   "weaknesses": [
-    "Fraquezas ainda não definidas.",
-    "Checar características específicas no futuro."
+    "Dano no chão é fraco."
   ],
   "specialMoves": [
     {
       "name": "High Fireball",
-      "shortDesc": "can be done in air too",
+      "shortDesc": "Lança um dragão de fogo em altura média.",
       "inputs": "F, F, HP",
-      "image": ""
+      "image": "Pode ser feito no ar."
     },
     {
       "name": "Low Fireball",
-      "shortDesc": "F, F, LP",
+      "shortDesc": "Lança um dragão de fogo em altura baixa.",
       "inputs": "F, F, LP",
-      "image": ""
+      "image": "",
+      "supportText": "Hold"
     },
     {
       "name": "Flying Kick",
-      "shortDesc": "F, F, HK",
+      "shortDesc": "Voadora muito rápida pra frente.",
       "inputs": "F, F, HK",
-      "image": ""
+      "image": "",
+      "supportText": "Hold"
     },
     {
       "name": "Bicycle Kick",
-      "shortDesc": "Hold LK for 3 seconds, then release",
-      "inputs": "Hold LK for 3 seconds, then release",
+      "shortDesc": "Anda de bicicleta, só que o pedal é a cara do oponente.",
+      "inputs": "Segure = LK, 3s",
       "image": "",
       "supportText": "Hold"
     }
@@ -49,55 +50,50 @@
   "combos": [
     {
       "name": "Combo",
-      "damage": "25%",
-      "inputs": "LK, LK, HK, LK"
-    },
-    {
-      "name": "Combo",
-      "damage": "28%",
-      "inputs": "HP, LK, LK, HK, B+ HK"
-    },
-    {
-      "name": "Combo",
       "damage": "36%",
       "inputs": "HP, HP, BLK, LK, LK, HK, B + LK"
     },
     {
       "name": "Combo",
-      "damage": "28%",
-      "inputs": "Jump Kick, High Fireball, Flying Kick"
+      "damage": "25",
+      "inputs": "HP, LK, LK, HP, LK"
+    },
+    {
+      "name": "Combo",
+      "damage": "22%",
+      "inputs": "LK, LK, HK, B + HK"
     }
   ],
   "finishers": [
     {
       "name": "Fatality 1",
-      "desc": "",
+      "desc": "Perto",
       "inputs": "F, F, D, D, LK"
     },
     {
       "name": "Fatality 2",
-      "desc": "",
-      "inputs": "hold BLK, Up, D, Up, Up, release BLK, BLK + RUN",
+      "desc": "Qualquer Lugar",
+      "inputs": "Segure + BLK, U, D, U, U",
       "supportText": "Hold"
     },
     {
       "name": "Animality",
-      "desc": "sweep",
+      "desc": "Rasteira",
       "inputs": "D, D, Up"
     },
     {
       "name": "Babality",
-      "desc": "",
+      "desc": "Meia Tela",
       "inputs": "D, D, D, HK"
     },
     {
       "name": "Friendship",
-      "desc": "",
+      "desc": "Meia Tela",
       "inputs": "RUN, RUN, RUN, D + RUN"
     },
     {
       "name": "Stage",
-      "desc": "",
+      "desc": "Perto",
       "inputs": "RUN, BLK, BLK, LK"
     }
   ],
